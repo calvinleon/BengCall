@@ -14,27 +14,8 @@
 		D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */; };
 		D743F3B82462761F00752C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B72462761F00752C64 /* Assets.xcassets */; };
 		D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B92462761F00752C64 /* LaunchScreen.storyboard */; };
-		D743F3C62462761F00752C64 /* BengCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3C52462761F00752C64 /* BengCallTests.swift */; };
-		D743F3D12462761F00752C64 /* BengCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3D02462761F00752C64 /* BengCallUITests.swift */; };
 		D743F3DF24627BBD00752C64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D743F3DE24627BBD00752C64 /* .gitignore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D743F3C22462761F00752C64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D743F3A02462761F00752C64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D743F3A72462761F00752C64;
-			remoteInfo = BengCall;
-		};
-		D743F3CD2462761F00752C64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D743F3A02462761F00752C64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D743F3A72462761F00752C64;
-			remoteInfo = BengCall;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D743F3A82462761F00752C64 /* BengCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +27,8 @@
 		D743F3B72462761F00752C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D743F3BA2462761F00752C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D743F3BC2462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D743F3C12462761F00752C64 /* BengCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BengCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D743F3C52462761F00752C64 /* BengCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallTests.swift; sourceTree = "<group>"; };
 		D743F3C72462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D743F3CC2462761F00752C64 /* BengCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BengCallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D743F3D02462761F00752C64 /* BengCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallUITests.swift; sourceTree = "<group>"; };
 		D743F3D22462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D743F3DE24627BBD00752C64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -57,20 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		D743F3A52462761F00752C64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D743F3BE2462761F00752C64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D743F3C92462761F00752C64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				D743F3A82462761F00752C64 /* BengCall.app */,
-				D743F3C12462761F00752C64 /* BengCallTests.xctest */,
-				D743F3CC2462761F00752C64 /* BengCallUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,42 +117,6 @@
 			productReference = D743F3A82462761F00752C64 /* BengCall.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D743F3C02462761F00752C64 /* BengCallTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D743F3D82462761F00752C64 /* Build configuration list for PBXNativeTarget "BengCallTests" */;
-			buildPhases = (
-				D743F3BD2462761F00752C64 /* Sources */,
-				D743F3BE2462761F00752C64 /* Frameworks */,
-				D743F3BF2462761F00752C64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D743F3C32462761F00752C64 /* PBXTargetDependency */,
-			);
-			name = BengCallTests;
-			productName = BengCallTests;
-			productReference = D743F3C12462761F00752C64 /* BengCallTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D743F3CB2462761F00752C64 /* BengCallUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D743F3DB2462761F00752C64 /* Build configuration list for PBXNativeTarget "BengCallUITests" */;
-			buildPhases = (
-				D743F3C82462761F00752C64 /* Sources */,
-				D743F3C92462761F00752C64 /* Frameworks */,
-				D743F3CA2462761F00752C64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D743F3CE2462761F00752C64 /* PBXTargetDependency */,
-			);
-			name = BengCallUITests;
-			productName = BengCallUITests;
-			productReference = D743F3CC2462761F00752C64 /* BengCallUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,14 +129,6 @@
 				TargetAttributes = {
 					D743F3A72462761F00752C64 = {
 						CreatedOnToolsVersion = 11.4;
-					};
-					D743F3C02462761F00752C64 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = D743F3A72462761F00752C64;
-					};
-					D743F3CB2462761F00752C64 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = D743F3A72462761F00752C64;
 					};
 				};
 			};
@@ -227,8 +146,6 @@
 			projectRoot = "";
 			targets = (
 				D743F3A72462761F00752C64 /* BengCall */,
-				D743F3C02462761F00752C64 /* BengCallTests */,
-				D743F3CB2462761F00752C64 /* BengCallUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,20 +159,6 @@
 				D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */,
 				D743F3B82462761F00752C64 /* Assets.xcassets in Resources */,
 				D743F3B32462761F00752C64 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D743F3BF2462761F00752C64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D743F3CA2462761F00752C64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,36 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D743F3BD2462761F00752C64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D743F3C62462761F00752C64 /* BengCallTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D743F3C82462761F00752C64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D743F3D12462761F00752C64 /* BengCallUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D743F3C32462761F00752C64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D743F3A72462761F00752C64 /* BengCall */;
-			targetProxy = D743F3C22462761F00752C64 /* PBXContainerItemProxy */;
-		};
-		D743F3CE2462761F00752C64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D743F3A72462761F00752C64 /* BengCall */;
-			targetProxy = D743F3CD2462761F00752C64 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D743F3B12462761F00752C64 /* Main.storyboard */ = {
@@ -474,90 +348,6 @@
 			};
 			name = Release;
 		};
-		D743F3D92462761F00752C64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JY65WKMSCH;
-				INFOPLIST_FILE = BengCallTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calvinleon.BengCallTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BengCall.app/BengCall";
-			};
-			name = Debug;
-		};
-		D743F3DA2462761F00752C64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JY65WKMSCH;
-				INFOPLIST_FILE = BengCallTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calvinleon.BengCallTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BengCall.app/BengCall";
-			};
-			name = Release;
-		};
-		D743F3DC2462761F00752C64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JY65WKMSCH;
-				INFOPLIST_FILE = BengCallUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calvinleon.BengCallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BengCall;
-			};
-			name = Debug;
-		};
-		D743F3DD2462761F00752C64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JY65WKMSCH;
-				INFOPLIST_FILE = BengCallUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.calvinleon.BengCallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BengCall;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,24 +365,6 @@
 			buildConfigurations = (
 				D743F3D62462761F00752C64 /* Debug */,
 				D743F3D72462761F00752C64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D743F3D82462761F00752C64 /* Build configuration list for PBXNativeTarget "BengCallTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D743F3D92462761F00752C64 /* Debug */,
-				D743F3DA2462761F00752C64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D743F3DB2462761F00752C64 /* Build configuration list for PBXNativeTarget "BengCallUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D743F3DC2462761F00752C64 /* Debug */,
-				D743F3DD2462761F00752C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
