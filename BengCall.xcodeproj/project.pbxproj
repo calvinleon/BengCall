@@ -14,7 +14,7 @@
 		5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */; };
 		5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */; };
 		5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */; };
-		83CCE7FF2463D7F7000EDF9C /* UserBooking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* UserBooking.storyboard */; };
+		83CCE7FF2463D7F7000EDF9C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* User.storyboard */; };
 		83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */; };
 		D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AB2462761F00752C64 /* AppDelegate.swift */; };
 		D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AD2462761F00752C64 /* SceneDelegate.swift */; };
@@ -24,6 +24,7 @@
 		D743F3B82462761F00752C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B72462761F00752C64 /* Assets.xcassets */; };
 		D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B92462761F00752C64 /* LaunchScreen.storyboard */; };
 		D743F3DF24627BBD00752C64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D743F3DE24627BBD00752C64 /* .gitignore */; };
+		D775BC9F24640027001C38A9 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BC9E24640027001C38A9 /* UserVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
-		83CCE7FE2463D7F7000EDF9C /* UserBooking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserBooking.storyboard; sourceTree = "<group>"; };
+		83CCE7FE2463D7F7000EDF9C /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerStoryboard.storyboard; sourceTree = "<group>"; };
 		D743F3A82462761F00752C64 /* BengCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D743F3AB2462761F00752C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		D743F3D02462761F00752C64 /* BengCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallUITests.swift; sourceTree = "<group>"; };
 		D743F3D22462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D743F3DE24627BBD00752C64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D775BC9E24640027001C38A9 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 		5A7C73E22463F740009ABFC3 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				83CCE7FE2463D7F7000EDF9C /* UserBooking.storyboard */,
+				83CCE7FE2463D7F7000EDF9C /* User.storyboard */,
 				5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */,
 				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
 				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
@@ -89,6 +91,7 @@
 				5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */,
 				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
 				5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */,
+				D775BC9E24640027001C38A9 /* UserVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -245,7 +248,7 @@
 				D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */,
 				D743F3B82462761F00752C64 /* Assets.xcassets in Resources */,
 				5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */,
-				83CCE7FF2463D7F7000EDF9C /* UserBooking.storyboard in Resources */,
+				83CCE7FF2463D7F7000EDF9C /* User.storyboard in Resources */,
 				D743F3B32462761F00752C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +267,7 @@
 				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
 				5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */,
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
+				D775BC9F24640027001C38A9 /* UserVC.swift in Sources */,
 				5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
