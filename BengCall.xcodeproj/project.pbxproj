@@ -20,6 +20,7 @@
 		83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80724645064000EDF9C /* OwnerProfile.storyboard */; };
 		83CCE80A246452A4000EDF9C /* OwnerBookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE809246452A4000EDF9C /* OwnerBookListVC.swift */; };
 		83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */; };
+		83CCE81224647F84000EDF9C /* Authoshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE81124647F84000EDF9C /* Authoshop.swift */; };
 		D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AB2462761F00752C64 /* AppDelegate.swift */; };
 		D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AD2462761F00752C64 /* SceneDelegate.swift */; };
 		D743F3B02462761F00752C64 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AF2462761F00752C64 /* MainVC.swift */; };
@@ -46,6 +47,7 @@
 		83CCE80724645064000EDF9C /* OwnerProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerProfile.storyboard; sourceTree = "<group>"; };
 		83CCE809246452A4000EDF9C /* OwnerBookListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OwnerBookListVC.swift; path = BengCall/Controllers/OwnerBookListVC.swift; sourceTree = SOURCE_ROOT; };
 		83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OwnerProfileVC.swift; path = BengCall/Controllers/OwnerProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		83CCE81124647F84000EDF9C /* Authoshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authoshop.swift; sourceTree = "<group>"; };
 		D743F3A82462761F00752C64 /* BengCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D743F3AB2462761F00752C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D743F3AD2462761F00752C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */,
-				D7204DB724642F4B00BE9362 /* AutoShop.swift */,
+				83CCE81124647F84000EDF9C /* Authoshop.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,10 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CCE81224647F84000EDF9C /* Authoshop.swift in Sources */,
 				D743F3B02462761F00752C64 /* MainVC.swift in Sources */,
 				83CCE80A246452A4000EDF9C /* OwnerBookListVC.swift in Sources */,
 				D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */,
-				D7204DB824642F4B00BE9362 /* AutoShop.swift in Sources */,
 				D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */,
 				D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */,
 				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
