@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ymc-in-iwP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="5JC-gF-Har">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uHr-3i-RoL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ymc-in-iwP" id="MpX-sD-T1Z"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uHr-3i-RoL" firstAttribute="leading" secondItem="cJh-lq-LWL" secondAttribute="leading" id="9jM-Gq-ca1"/>
+                            <constraint firstItem="uHr-3i-RoL" firstAttribute="top" secondItem="5JC-gF-Har" secondAttribute="top" id="GOa-Qr-EwS"/>
+                            <constraint firstAttribute="bottom" secondItem="uHr-3i-RoL" secondAttribute="bottom" id="IEJ-lE-WlM"/>
+                            <constraint firstItem="uHr-3i-RoL" firstAttribute="trailing" secondItem="cJh-lq-LWL" secondAttribute="trailing" id="ex6-yR-hzx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cJh-lq-LWL"/>
                     </view>
+                    <connections>
+                        <outlet property="userMapView" destination="uHr-3i-RoL" id="WVO-v8-ErP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vr0-hf-Qf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="48"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="47.544642857142854"/>
         </scene>
     </scenes>
 </document>
