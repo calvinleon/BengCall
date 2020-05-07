@@ -24,7 +24,7 @@
 		D743F3B82462761F00752C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B72462761F00752C64 /* Assets.xcassets */; };
 		D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B92462761F00752C64 /* LaunchScreen.storyboard */; };
 		D743F3DF24627BBD00752C64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D743F3DE24627BBD00752C64 /* .gitignore */; };
-		D775BC9F24640027001C38A9 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BC9E24640027001C38A9 /* UserVC.swift */; };
+		D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BC9E24640027001C38A9 /* UserHomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,7 @@
 		D743F3D02462761F00752C64 /* BengCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallUITests.swift; sourceTree = "<group>"; };
 		D743F3D22462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D743F3DE24627BBD00752C64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D775BC9E24640027001C38A9 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		D775BC9E24640027001C38A9 /* UserHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */,
 				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
 				5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */,
-				D775BC9E24640027001C38A9 /* UserVC.swift */,
+				D775BC9E24640027001C38A9 /* UserHomeVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
 				5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */,
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
-				D775BC9F24640027001C38A9 /* UserVC.swift in Sources */,
+				D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */,
 				5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
