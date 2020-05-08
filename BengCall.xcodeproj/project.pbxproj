@@ -7,21 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */; };
+		5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */; };
+		5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */; };
+		5A7C73E92463FA82009ABFC3 /* UserHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */; };
+		5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */; };
+		5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */; };
+		5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */; };
+		83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */; };
+		83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */; };
+		83CCE80624645054000EDF9C /* OwnerBookList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80524645054000EDF9C /* OwnerBookList.storyboard */; };
+		83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80724645064000EDF9C /* OwnerProfile.storyboard */; };
+		83CCE80A246452A4000EDF9C /* OwnerBookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE809246452A4000EDF9C /* OwnerBookListVC.swift */; };
+		83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */; };
+		83CCE81224647F84000EDF9C /* Authoshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE81124647F84000EDF9C /* Authoshop.swift */; };
 		D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AB2462761F00752C64 /* AppDelegate.swift */; };
 		D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AD2462761F00752C64 /* SceneDelegate.swift */; };
-		D743F3B02462761F00752C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AF2462761F00752C64 /* ViewController.swift */; };
+		D743F3B02462761F00752C64 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AF2462761F00752C64 /* MainVC.swift */; };
 		D743F3B32462761F00752C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B12462761F00752C64 /* Main.storyboard */; };
 		D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */; };
 		D743F3B82462761F00752C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B72462761F00752C64 /* Assets.xcassets */; };
 		D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B92462761F00752C64 /* LaunchScreen.storyboard */; };
 		D743F3DF24627BBD00752C64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D743F3DE24627BBD00752C64 /* .gitignore */; };
+		D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BC9E24640027001C38A9 /* UserHomeVC.swift */; };
+		D775BCA124642AC1001C38A9 /* AutoshopCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */; };
+		D7878A462464EB57000CF72C /* SearchAutoShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSearchLocation.storyboard; sourceTree = "<group>"; };
+		5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchLocationVC.swift; sourceTree = "<group>"; };
+		5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserHistory.storyboard; sourceTree = "<group>"; };
+		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
+		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
+		83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
+		83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerStoryboard.storyboard; sourceTree = "<group>"; };
+		83CCE80524645054000EDF9C /* OwnerBookList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerBookList.storyboard; sourceTree = "<group>"; };
+		83CCE80724645064000EDF9C /* OwnerProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerProfile.storyboard; sourceTree = "<group>"; };
+		83CCE809246452A4000EDF9C /* OwnerBookListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OwnerBookListVC.swift; path = BengCall/Controllers/OwnerBookListVC.swift; sourceTree = SOURCE_ROOT; };
+		83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OwnerProfileVC.swift; path = BengCall/Controllers/OwnerProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		83CCE81124647F84000EDF9C /* Authoshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authoshop.swift; sourceTree = "<group>"; };
 		D743F3A82462761F00752C64 /* BengCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BengCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D743F3AB2462761F00752C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D743F3AD2462761F00752C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D743F3AF2462761F00752C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D743F3AF2462761F00752C64 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D743F3B22462761F00752C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D743F3B52462761F00752C64 /* BengCall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BengCall.xcdatamodel; sourceTree = "<group>"; };
 		D743F3B72462761F00752C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +63,9 @@
 		D743F3D02462761F00752C64 /* BengCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallUITests.swift; sourceTree = "<group>"; };
 		D743F3D22462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D743F3DE24627BBD00752C64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D775BC9E24640027001C38A9 /* UserHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeVC.swift; sourceTree = "<group>"; };
+		D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoshopCollectionVC.swift; sourceTree = "<group>"; };
+		D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAutoShopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7C73E22463F740009ABFC3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */,
+				5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */,
+				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
+				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5A7C73E32463F757009ABFC3 /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */,
+				83CCE80524645054000EDF9C /* OwnerBookList.storyboard */,
+				83CCE80724645064000EDF9C /* OwnerProfile.storyboard */,
+			);
+			path = Owner;
+			sourceTree = "<group>";
+		};
+		5A7C73E42463F896009ABFC3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */,
+				D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */,
+				5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */,
+				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
+				5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */,
+				D775BC9E24640027001C38A9 /* UserHomeVC.swift */,
+				D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5A7C73E52463F8A0009ABFC3 /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */,
+				83CCE809246452A4000EDF9C /* OwnerBookListVC.swift */,
+			);
+			path = Owner;
+			sourceTree = "<group>";
+		};
+		83CCE8022463D8D5000EDF9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D743F3B12462761F00752C64 /* Main.storyboard */,
+				5A7C73E22463F740009ABFC3 /* User */,
+				5A7C73E32463F757009ABFC3 /* Owner */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83CCE8032463D905000EDF9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */,
+				83CCE81124647F84000EDF9C /* Authoshop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83CCE8042463D90B000EDF9C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D743F3AF2462761F00752C64 /* MainVC.swift */,
+				5A7C73E42463F896009ABFC3 /* User */,
+				5A7C73E52463F8A0009ABFC3 /* Owner */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D743F39F2462761F00752C64 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +176,12 @@
 			children = (
 				D743F3AB2462761F00752C64 /* AppDelegate.swift */,
 				D743F3AD2462761F00752C64 /* SceneDelegate.swift */,
-				D743F3AF2462761F00752C64 /* ViewController.swift */,
-				D743F3B12462761F00752C64 /* Main.storyboard */,
+				83CCE8032463D905000EDF9C /* Models */,
+				83CCE8042463D90B000EDF9C /* Controllers */,
+				83CCE8022463D8D5000EDF9C /* Views */,
 				D743F3B72462761F00752C64 /* Assets.xcassets */,
 				D743F3B92462761F00752C64 /* LaunchScreen.storyboard */,
 				D743F3BC2462761F00752C64 /* Info.plist */,
-				D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */,
 			);
 			path = BengCall;
 			sourceTree = "<group>";
@@ -156,8 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D743F3DF24627BBD00752C64 /* .gitignore in Resources */,
+				83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */,
+				5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */,
+				5A7C73E92463FA82009ABFC3 /* UserHistory.storyboard in Resources */,
 				D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */,
+				83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */,
+				83CCE80624645054000EDF9C /* OwnerBookList.storyboard in Resources */,
 				D743F3B82462761F00752C64 /* Assets.xcassets in Resources */,
+				5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */,
+				83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */,
 				D743F3B32462761F00752C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,10 +283,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D743F3B02462761F00752C64 /* ViewController.swift in Sources */,
+				83CCE81224647F84000EDF9C /* Authoshop.swift in Sources */,
+				D743F3B02462761F00752C64 /* MainVC.swift in Sources */,
+				83CCE80A246452A4000EDF9C /* OwnerBookListVC.swift in Sources */,
 				D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */,
+				D7878A462464EB57000CF72C /* SearchAutoShopVC.swift in Sources */,
 				D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */,
 				D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */,
+				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
+				5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */,
+				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
+				D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */,
+				83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */,
+				5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */,
+				D775BCA124642AC1001C38A9 /* AutoshopCollectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -302,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
