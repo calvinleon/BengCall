@@ -14,7 +14,7 @@
 		5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */; };
 		5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */; };
 		5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */; };
-		83CCE7FF2463D7F7000EDF9C /* SearchAutoshop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* SearchAutoshop.storyboard */; };
+		83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */; };
 		83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */; };
 		83CCE80624645054000EDF9C /* OwnerBookList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80524645054000EDF9C /* OwnerBookList.storyboard */; };
 		83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80724645064000EDF9C /* OwnerProfile.storyboard */; };
@@ -42,7 +42,7 @@
 		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
-		83CCE7FE2463D7F7000EDF9C /* SearchAutoshop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchAutoshop.storyboard; sourceTree = "<group>"; };
+		83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerStoryboard.storyboard; sourceTree = "<group>"; };
 		83CCE80524645054000EDF9C /* OwnerBookList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerBookList.storyboard; sourceTree = "<group>"; };
 		83CCE80724645064000EDF9C /* OwnerProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerProfile.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		5A7C73E22463F740009ABFC3 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				83CCE7FE2463D7F7000EDF9C /* SearchAutoshop.storyboard */,
+				83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */,
 				5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */,
 				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
 				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
@@ -271,7 +271,7 @@
 				83CCE80624645054000EDF9C /* OwnerBookList.storyboard in Resources */,
 				D743F3B82462761F00752C64 /* Assets.xcassets in Resources */,
 				5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */,
-				83CCE7FF2463D7F7000EDF9C /* SearchAutoshop.storyboard in Resources */,
+				83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */,
 				D743F3B32462761F00752C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +287,6 @@
 				D743F3B02462761F00752C64 /* MainVC.swift in Sources */,
 				83CCE80A246452A4000EDF9C /* OwnerBookListVC.swift in Sources */,
 				D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */,
-				D7204DB824642F4B00BE9362 /* AutoShop.swift in Sources */,
 				D7878A462464EB57000CF72C /* SearchAutoShopVC.swift in Sources */,
 				D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */,
 				D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */,
