@@ -14,6 +14,8 @@ class OwnerBookListVC: UIViewController {
     @IBOutlet weak var waitingListContainerView: UIView!
     @IBOutlet weak var inProgressContainerView: UIView!
     
+    var owner = ""
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }

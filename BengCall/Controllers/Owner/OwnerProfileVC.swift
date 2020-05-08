@@ -12,6 +12,9 @@ class OwnerProfileVC: UIViewController {
 
     @IBOutlet weak var ownerImageView: UIImageView!
     
+    var owner = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
