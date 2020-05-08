@@ -172,41 +172,26 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="vyl-NK-hXD"/>
                     <connections>
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
-                        <segue destination="6wK-Uw-5st" kind="show" id="3WL-I6-A4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMw-G4-HHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1085.5072463768117" y="105.13392857142857"/>
         </scene>
-        <!--SearchBengkel-->
-        <scene sceneID="I5U-eo-89U">
+        <!--View Controller-->
+        <scene sceneID="MSz-9D-V8C">
             <objects>
-                <tableViewController title="SearchBengkel" id="6wK-Uw-5st" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tmH-LP-c9n">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="ncU-Dj-tLp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uWb-K5-gBN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rUc-RT-GWL">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rUc-RT-GWL" id="gsa-aS-u0p">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6wK-Uw-5st" id="QZh-WN-VDo"/>
-                            <outlet property="delegate" destination="6wK-Uw-5st" id="96r-Zv-D4g"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="7So-mK-jfg"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdd-0K-8Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="Gj0-vI-Dnv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kB6-5m-caP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107" y="-314"/>
+            <point key="canvasLocation" x="2097" y="-310"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="btw-EE-cry">
