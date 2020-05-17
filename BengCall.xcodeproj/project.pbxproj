@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A16A4782471908700AA4D4D /* SearchViewTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */; };
 		5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */; };
 		5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */; };
 		5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTableVC.swift; sourceTree = "<group>"; };
 		5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSearchLocation.storyboard; sourceTree = "<group>"; };
 		5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchLocationVC.swift; sourceTree = "<group>"; };
 		5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */,
 				D775BC9E24640027001C38A9 /* UserHomeVC.swift */,
 				D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */,
+				5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */,
 				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
 				5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */,
+				5A16A4782471908700AA4D4D /* SearchViewTableVC.swift in Sources */,
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
 				D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */,
 				83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */,

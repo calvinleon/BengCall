@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+protocol MapSearchHandler {
+    func dropPinZoomIn(placemark: MKPlacemark)
+}
+
 class UserSearchLocationVC: UIViewController {
     
     @IBOutlet weak var userMapView: MKMapView!
@@ -20,8 +24,18 @@ class UserSearchLocationVC: UIViewController {
         
         locationManager.delegate = self
         locationManagerSetup()
-        
     }
+    
+//    //MARK: - SEARCH BAR
+//    func searchLocationBarSetup() {
+//
+//
+//    }
+
+}
+
+//MARK: - LOCATION MANAGER
+extension UserSearchLocationVC: CLLocationManagerDelegate {
     
     func locationManagerSetup() {
         
@@ -29,10 +43,6 @@ class UserSearchLocationVC: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
     }
-}
-
-//MARK: - LOCATION MANAGER
-extension UserSearchLocationVC: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
@@ -54,5 +64,6 @@ extension UserSearchLocationVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         
     }
+    
     
 }
