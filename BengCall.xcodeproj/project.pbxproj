@@ -108,10 +108,10 @@
 				5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */,
 				D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */,
 				5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */,
-				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
 				5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */,
 				D775BC9E24640027001C38A9 /* UserHomeVC.swift */,
 				D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */,
+				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
 				5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */,
 			);
 			path = User;
