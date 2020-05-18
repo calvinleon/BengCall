@@ -8,83 +8,128 @@
 
 import UIKit
 import MapKit
-import CoreLocation
+
+protocol MapSearchHandler {
+    func dropPinZoomIn(placemark: MKPlacemark)
+}
 
 class UserSearchLocationVC: UIViewController {
-
+    
     @IBOutlet weak var userMapView: MKMapView!
     
     let locationManager = CLLocationManager()
-    let regionInMeters: Double = 5000
+    var resultSearchController: UISearchController? = nil
+    
+    var selectedPin: MKPlacemark? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        checkLocationServices()
-    }
-    
-    func setupLocationManager() {
-        
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManagerSetup()
+        searchLocationBarSetup()
     }
     
-    func centerViewOnUserLocation() {
-        if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-            userMapView.setRegion(region, animated: true)
-        }
-    }
-    
-    func checkLocationServices() {
+    func getDirections() {
         
-        if CLLocationManager.locationServicesEnabled() {
-            
-            setupLocationManager()
-            checkLocationAuthorization()
-        }
-        else {
-            //show alert to user to turn this on
+        if let selectedPin = selectedPin {
+            let mapItem = MKMapItem(placemark: selectedPin)
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            mapItem.openInMaps(launchOptions: launchOptions)
         }
     }
     
-    func checkLocationAuthorization() {
+    //MARK: - SEARCH BAR
+    func searchLocationBarSetup() {
         
-        switch CLLocationManager.authorizationStatus() {
-            
-        case .authorizedWhenInUse:
-            userMapView.showsUserLocation = true
-            centerViewOnUserLocation()
-            locationManager.startUpdatingLocation()
-        case .notDetermined:
-            locationManager.requestWhenInUseAuthorization()
-        case .restricted:
-            //Show an alert to users that they're restricted to turn on the location
-            break
-        case .denied:
-            //Show alert instructing users to turn the Location Service ON
-            break
-        case .authorizedAlways:
-            break
-        @unknown default:
-            break
-        }
+        let searchViewTable = storyboard!.instantiateViewController(identifier: "SearchViewTableVC") as! SearchViewTableVC
+        searchViewTable.mapSearchHandlerDelegate = self
+        
+        resultSearchController = UISearchController(searchResultsController: searchViewTable)
+        resultSearchController?.searchResultsUpdater = searchViewTable
+        
+        //Embeds SearchBar on the NavBar
+        let searchBar = resultSearchController?.searchBar
+        searchBar?.sizeToFit()
+        searchBar?.placeholder = "Search for Repair Shops"
+        navigationItem.titleView = resultSearchController?.searchBar
+        
+        resultSearchController?.hidesNavigationBarDuringPresentation = false
+        definesPresentationContext = true
+        
+        searchViewTable.userMapView = userMapView
     }
     
 }
 
+//MARK: - LOCATION MANAGER
 extension UserSearchLocationVC: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        //When the user's location updated
-        guard let location = locations.last else { return }
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-        userMapView.setRegion(region, animated: true)
+    func locationManagerSetup() {
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        //When users change their own permissions
-        checkLocationAuthorization()
+        
+        if status == .authorizedWhenInUse {
+            
+            locationManager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            
+            let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            userMapView.setRegion(region, animated: true)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+}
+
+//MARK: - MAP SEARCH HANDLER
+extension UserSearchLocationVC: MapSearchHandler {
+    func dropPinZoomIn(placemark: MKPlacemark) {
+        selectedPin = placemark
+        userMapView.removeAnnotations(userMapView.annotations)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality, let state = placemark.administrativeArea {
+            
+            annotation.subtitle = "\(city), \(state)"
+        }
+        userMapView.addAnnotation(annotation)
+        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+        let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
+        userMapView.setRegion(region, animated: true)
+        
+    }
+}
+
+//MARK: - MKMAPViewDelegate
+extension UserSearchLocationVC: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        let reuseID = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID) as? MKPinAnnotationView
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
+        pinView?.pinTintColor = UIColor.red
+        pinView?.canShowCallout = true
+        
+        return pinView
     }
 }
