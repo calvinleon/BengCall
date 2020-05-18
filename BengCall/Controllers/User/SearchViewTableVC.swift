@@ -48,23 +48,23 @@ class SearchViewTableVC: UITableViewController {
     
     func parseAddress(selectedItem:MKPlacemark) -> String {
       // Put a space between "4" and "Melrose Place"
-      let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil ) ? " " : " "
+      let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil ) ? " " : ""
       // Put comma between street and city/state
-      let comma = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.subAdministrativeArea != nil) ? ", " : " "
+      let comma = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.subAdministrativeArea != nil) ? ", " : ""
       // Put a space between "Washington" and "DC"
       let secondSpace = (selectedItem.subAdministrativeArea != nil && selectedItem.administrativeArea != nil) ? " " : ""
       let addressLine = String(format: "%@%@%@%@%@%@%@",
                                // Street number
-                               selectedItem.subThoroughfare ?? " ",
+                               selectedItem.subThoroughfare ?? "",
                                firstSpace,
                                // Street name
-                               selectedItem.thoroughfare ?? " ",
+                               selectedItem.thoroughfare ?? "",
                                comma,
                                // City
-                               selectedItem.locality ?? " ",
+                               selectedItem.locality ?? "",
                                secondSpace,
                                // State
-                               selectedItem.administrativeArea ?? " "
+                               selectedItem.administrativeArea ?? ""
       )
       return addressLine
     }
