@@ -15,6 +15,10 @@ protocol MapSearchHandler {
 
 class UserSearchLocationVC: UIViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     @IBOutlet weak var userMapView: MKMapView!
     
     let locationManager = CLLocationManager()

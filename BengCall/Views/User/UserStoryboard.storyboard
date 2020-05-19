@@ -81,7 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="map" catalog="system"/>
                                 <connections>
-                                    <segue destination="zJD-Ac-Py0" kind="showDetail" id="bVN-vw-rqb"/>
+                                    <segue destination="zJD-Ac-Py0" kind="push" id="bVN-vw-rqb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m99-gh-eUP">
