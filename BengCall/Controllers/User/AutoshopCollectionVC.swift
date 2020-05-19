@@ -13,6 +13,7 @@ class AutoshopCollectionVC: UICollectionViewCell {
     @IBOutlet weak var autoShopImgView: UIImageView!
     @IBOutlet weak var autoShopNameLbl: UILabel!
     @IBOutlet weak var autoShopAddressLbl: UILabel!
+    @IBOutlet weak var serviceStackView: UIStackView!
     
     
     @IBAction func bookBtn(_ sender: Any) {

@@ -11,6 +11,7 @@ import UIKit
 class UserHomeVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+
     var autoShops = AutoShop.fetchAutoShop()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,7 +32,7 @@ class UserHomeVC: UIViewController {
 //        
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+
     }
 }
 
@@ -42,20 +43,22 @@ extension UserHomeVC: UICollectionViewDataSource {
         return 1
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return autoShops.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AutoShopCVCell", for: indexPath) as! AutoshopCollectionVC
-               let autoShop = autoShops[indexPath.item]
-               
-               cell.autoShop = autoShop
-               
-               return cell
+         
+             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AutoShopCVCell", for: indexPath) as! AutoshopCollectionVC
+             let autoShop = autoShops[indexPath.item]
+             
+             cell.autoShop = autoShop
+             
+             return cell
     }
-
 }
 
 
@@ -75,3 +78,5 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
     }
     
 }
+
+
