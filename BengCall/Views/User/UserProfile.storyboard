@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="i2k-x2-yqd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="FoI-Wu-nw6"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="FoI-Wu-nw6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ons-Nc-A5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,4 +25,7 @@
             <point key="canvasLocation" x="-19" y="76"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
 </document>
