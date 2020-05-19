@@ -14,7 +14,6 @@ class OwnerProfileVC: UIViewController {
     
     var owner = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

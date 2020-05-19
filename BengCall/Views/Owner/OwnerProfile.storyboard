@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8dy-28-hQM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="2YJ-kb-ycu"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="2YJ-kb-ycu"/>
                     <navigationItem key="navigationItem" title="Auto Shop Profile" id="dKY-Ju-OcC">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="KGj-Bs-GGd"/>
                     </navigationItem>
@@ -100,6 +100,7 @@
     </scenes>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="wahana_honda" width="1366" height="631"/>
     </resources>
 </document>
