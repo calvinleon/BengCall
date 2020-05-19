@@ -12,6 +12,11 @@ class UserHomeVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
+    
+    var autoShopName = ""
+    var tempName = ""
+
+    
     var autoShops = AutoShop.fetchAutoShop()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,8 +39,19 @@ class UserHomeVC: UIViewController {
         collectionView.delegate = self
 
     }
+    
+    func startSegue() {
+        performSegue(withIdentifier: "autoshopDetailSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? AutoShopDetailVC {
+        
+            destination.autoshopName = tempName
+            
+        }
+    }
 }
-
 
 extension UserHomeVC: UICollectionViewDataSource {
     
@@ -43,24 +59,20 @@ extension UserHomeVC: UICollectionViewDataSource {
         return 1
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return autoShops.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-         
-             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AutoShopCVCell", for: indexPath) as! AutoshopCollectionVC
-             let autoShop = autoShops[indexPath.item]
-             
-             cell.autoShop = autoShop
-             
-             return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AutoShopCVCell", for: indexPath) as! AutoshopCollectionVC
+        let autoShop = autoShops[indexPath.item]
+        
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+        cell.autoShop = autoShop
+            
+        return cell
     }
 }
-
 
 extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
@@ -74,9 +86,23 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
         offset = CGPoint(x: roundIndex * cellWithIncludingSpacing - scrollView.contentInset.left, y: scrollView.contentInset.top)
         
         targetContentOffset.pointee = offset
-        
     }
     
+    @objc func tap(_ sender: UITapGestureRecognizer) {
+
+       let location = sender.location(in: self.collectionView)
+       let indexPath = self.collectionView.indexPathForItem(at: location)
+        
+       if let tempIndex = indexPath {
+          print("Got clicked on index: \(tempIndex)!")
+        
+            let autoshop = autoShops[tempIndex.item]
+            tempName = autoshop.autoShopName
+        
+            startSegue()
+            
+       }
+    }
 }
 
 

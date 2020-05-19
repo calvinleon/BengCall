@@ -221,6 +221,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="vyl-NK-hXD"/>
                     <connections>
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
+                        <segue destination="WUQ-U5-aFp" kind="show" identifier="autoshopDetailSegue" id="rBj-gs-8R2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMw-G4-HHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,7 +233,7 @@
             <objects>
                 <viewController id="WUQ-U5-aFp" customClass="AutoShopDetailVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LnI-ng-7q6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bengkel" translatesAutoresizingMaskIntoConstraints="NO" id="1ge-Ig-nsT">
@@ -242,7 +243,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znD-BM-Yfm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jCQ-Td-emf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
@@ -499,7 +500,7 @@ Science Group. </string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGs-yY-3Ct">
-                                        <rect key="frame" x="14" y="792" width="387" height="50"/>
+                                        <rect key="frame" x="14" y="738" width="387" height="50"/>
                                         <color key="backgroundColor" red="0.19607843137254902" green="0.36470588235294116" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="w6z-CR-VXu"/>
@@ -538,6 +539,7 @@ Science Group. </string>
                     </view>
                     <navigationItem key="navigationItem" id="4gA-HD-7Ec"/>
                     <connections>
+                        <outlet property="autoshopNameLbl" destination="UG1-rE-wyj" id="Ctj-kM-gLv"/>
                         <outlet property="descLbl" destination="e3Z-IR-fey" id="rAH-eZ-vgu"/>
                         <outlet property="detailView" destination="ZGq-Uw-uBL" id="sE9-jo-Nr8"/>
                     </connections>
