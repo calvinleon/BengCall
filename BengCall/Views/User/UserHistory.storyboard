@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OdT-vN-HcT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History" id="g4s-ho-OC4"/>
+                    <tabBarItem key="tabBarItem" title="History" image="clock.fill" catalog="system" id="g4s-ho-OC4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYq-En-X8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,4 +25,7 @@
             <point key="canvasLocation" x="-38" y="72"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

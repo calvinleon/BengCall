@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A16A4782471908700AA4D4D /* SearchViewTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */; };
+		5A6EEA62247416E0002CCF04 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */; };
 		5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */; };
 		5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */; };
 		5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTableVC.swift; sourceTree = "<group>"; };
+		5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSearchLocation.storyboard; sourceTree = "<group>"; };
 		5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchLocationVC.swift; sourceTree = "<group>"; };
 		5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */,
 				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
 				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
+				5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				D743F3DF24627BBD00752C64 /* .gitignore in Resources */,
 				83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */,
 				5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */,
+				5A6EEA62247416E0002CCF04 /* Onboarding.storyboard in Resources */,
 				5A7C73E92463FA82009ABFC3 /* UserHistory.storyboard in Resources */,
 				D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */,
 				83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */,
