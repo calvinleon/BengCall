@@ -25,10 +25,10 @@ class AutoShop
     static func fetchAutoShop() -> [AutoShop]
     {
         return [
-            AutoShop(autoShopName: "Bengkel AHASS XYZ", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
-            AutoShop(autoShopName: "Bengkel AHASS XYZ", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
-            AutoShop(autoShopName: "Bengkel AHASS XYZ", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
-            AutoShop(autoShopName: "Bengkel AHASS XYZ", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
+            AutoShop(autoShopName: "Bengkel AHASS 1", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
+            AutoShop(autoShopName: "Bengkel AHASS 2", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
+            AutoShop(autoShopName: "Bengkel AHASS 3", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
+            AutoShop(autoShopName: "Bengkel AHASS 4", autoShopImg: UIImage(named: "bengkel.png")!, autoShopAddress: "Jl Maju Jaya"),
         ]
     }
 }

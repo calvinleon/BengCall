@@ -12,12 +12,18 @@ class AutoShopDetailVC: UIViewController {
     
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet weak var autoshopNameLbl: UILabel!
+    
+    var autoshopName = ""
+
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        autoshopNameLbl.text = autoshopName
         
         detailView.layer.cornerRadius = 15.0        
         descLbl.text = "TestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollViewTestScrollView"
