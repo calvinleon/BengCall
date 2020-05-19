@@ -12,8 +12,8 @@ class InProgressTableVC: UITableViewController {
 
     override func viewDidLoad() {
         
-        title = "In Progress"
-        navigationItem.largeTitleDisplayMode = .always
+//        title = "In Progress"
+//        navigationItem.largeTitleDisplayMode = .always
         
         super.viewDidLoad()
 
