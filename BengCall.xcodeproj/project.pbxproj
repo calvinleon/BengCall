@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A16A4782471908700AA4D4D /* SearchViewTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */; };
+		5A54A5E42476616B00092736 /* UserSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A54A5E32476616B00092736 /* UserSignUp.storyboard */; };
 		5A6EEA62247416E0002CCF04 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */; };
 		5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */; };
 		5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTableVC.swift; sourceTree = "<group>"; };
+		5A54A5E32476616B00092736 /* UserSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSignUp.storyboard; sourceTree = "<group>"; };
 		5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSearchLocation.storyboard; sourceTree = "<group>"; };
 		5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchLocationVC.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
 				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
 				5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */,
+				5A54A5E32476616B00092736 /* UserSignUp.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				83CCE80624645054000EDF9C /* OwnerInProgress.storyboard in Resources */,
 				D743F3B82462761F00752C64 /* Assets.xcassets in Resources */,
 				5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */,
+				5A54A5E42476616B00092736 /* UserSignUp.storyboard in Resources */,
 				83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */,
 				D743F3B32462761F00752C64 /* Main.storyboard in Resources */,
 			);
