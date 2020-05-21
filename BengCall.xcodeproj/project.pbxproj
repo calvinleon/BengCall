@@ -21,6 +21,8 @@
 		5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */; };
 		832FC59A24741C6100B5AEF7 /* InProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */; };
 		832FC59C24742B9900B5AEF7 /* InProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FC59B24742B9900B5AEF7 /* InProgressCell.swift */; };
+		838744FB2474D9B8006F1D52 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838744FA2474D9B8006F1D52 /* BookingModel.swift */; };
+		8387454E2476421A006F1D52 /* OwnerProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8387454D2476421A006F1D52 /* OwnerProfileTableVC.swift */; };
 		83CCE7FF2463D7F7000EDF9C /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */; };
 		83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */; };
 		83CCE80624645054000EDF9C /* OwnerInProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80524645054000EDF9C /* OwnerInProgress.storyboard */; };
@@ -57,6 +59,8 @@
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
 		832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
 		832FC59B24742B9900B5AEF7 /* InProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCell.swift; sourceTree = "<group>"; };
+		838744FA2474D9B8006F1D52 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		8387454D2476421A006F1D52 /* OwnerProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileTableVC.swift; sourceTree = "<group>"; };
 		83CCE7FE2463D7F7000EDF9C /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		83CCE8002463D816000EDF9C /* OwnerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerStoryboard.storyboard; sourceTree = "<group>"; };
 		83CCE80524645054000EDF9C /* OwnerInProgress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerInProgress.storyboard; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			children = (
 				D743F3B42462761F00752C64 /* BengCall.xcdatamodeld */,
 				83CCE81124647F84000EDF9C /* Authoshop.swift */,
+				838744FA2474D9B8006F1D52 /* BookingModel.swift */,
 				5A54A5E9247668E100092736 /* CloudKitHelper.swift */,
 			);
 			path = Models;
@@ -232,6 +237,7 @@
 				832FC59B24742B9900B5AEF7 /* InProgressCell.swift */,
 				832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */,
 				83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */,
+				8387454D2476421A006F1D52 /* OwnerProfileTableVC.swift */,
 			);
 			path = Owner;
 			sourceTree = "<group>";
@@ -329,12 +335,14 @@
 				5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */,
 				5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */,
 				5A16A4782471908700AA4D4D /* SearchViewTableVC.swift in Sources */,
+				8387454E2476421A006F1D52 /* OwnerProfileTableVC.swift in Sources */,
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
 				832FC59C24742B9900B5AEF7 /* InProgressCell.swift in Sources */,
 				D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */,
 				83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */,
 				5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */,
 				D775BCA124642AC1001C38A9 /* AutoshopCollectionVC.swift in Sources */,
+				838744FB2474D9B8006F1D52 /* BookingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
