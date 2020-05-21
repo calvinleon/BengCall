@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CloudKit
 
 class AutoshopCollectionVC: UICollectionViewCell {
+    
+    let helper = CloudKitHelper()
     
     @IBOutlet weak var autoShopImgView: UIImageView!
     @IBOutlet weak var autoShopNameLbl: UILabel!
@@ -18,6 +21,7 @@ class AutoshopCollectionVC: UICollectionViewCell {
     
     @IBAction func bookBtn(_ sender: Any) {
         
+        helper.saveBooking(customerName: "Calvin", motorType: "Suzuki CBR 1000", licensePlate: "B 4388 CBR", phoneNumber: "6281234567899", datetime: Date(), autoshopName: "PT Bahagia Selalu")
         
     }
     
