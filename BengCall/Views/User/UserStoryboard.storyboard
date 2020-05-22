@@ -271,10 +271,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="mjc-4Q-1PB"/>
+                    <connections>
+                        <segue destination="WUQ-U5-aFp" kind="show" identifier="searchAutoshopSegue" id="VmQ-8P-ogX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MET-UT-KLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="-259"/>
+            <point key="canvasLocation" x="2096" y="-364"/>
         </scene>
         <!--Auto Shop DetailVC-->
         <scene sceneID="nHp-Fa-EwA">
@@ -294,17 +297,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jCQ-Td-emf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5O-1e-hlh">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="bSV-ew-IFd"/>
+                                                    <constraint firstAttribute="height" constant="230" id="bSV-ew-IFd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Uw-uBL">
-                                                <rect key="frame" x="0.0" y="150" width="414" height="617"/>
+                                                <rect key="frame" x="0.0" y="230" width="414" height="617"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahass XYZ Motor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG1-rE-wyj">
                                                         <rect key="frame" x="13" y="19" width="244" height="36"/>
@@ -636,6 +639,9 @@ Science Group. </string>
             <point key="canvasLocation" x="570" y="524"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VmQ-8P-ogX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
         <image name="house" catalog="system" width="128" height="110"/>

@@ -23,6 +23,7 @@ class AutoShopDetailVC: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

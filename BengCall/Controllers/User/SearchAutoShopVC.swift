@@ -15,6 +15,10 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
     
     var filteredAutoShop = [AutoShop]()
     var resultSearchController = UISearchController()
+    var tempName = ""
+    var tempDesc = ""
+    var tempAddress = ""
+    var tempImg = UIImage()
     
     func updateSearchResults(for searchController: UISearchController) {
         filteredAutoShop.removeAll(keepingCapacity: false)
@@ -38,8 +42,9 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
             controller.searchResultsUpdater = self
             controller.searchBar.sizeToFit()               
             controller.obscuresBackgroundDuringPresentation = false
+            controller.hidesNavigationBarDuringPresentation = false
 
-            tableView.tableHeaderView = controller.searchBar
+            navigationItem.titleView = controller.searchBar
                
             return controller
         })()
@@ -48,13 +53,15 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
     }
 
     func startSegue() {
-          performSegue(withIdentifier: "autoshopDetailSegue", sender: self)
+          performSegue(withIdentifier: "searchAutoshopSegue", sender: self)
       }
       
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? AutoShopDetailVC {
-          
-                
+            destination.autoshopName = tempName
+            destination.autoshopDesc = tempDesc
+            destination.autoshopImg = tempImg
+            destination.autoshopAdress = tempAddress
         }
     }
     
@@ -88,9 +95,20 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (resultSearchController.isActive){
-               
-        } else {
+            let filteredAutoshops = filteredAutoShop[indexPath.row]
             
+            tempName = filteredAutoshops.autoShopName
+            tempDesc = filteredAutoshops.autoShopDesc
+            tempImg = filteredAutoshops.autoShopImg
+            tempAddress = filteredAutoshops.autoShopAddress
+            
+        } else {
+            let autoshops = autoShop[indexPath.row]
+            
+            tempName = autoshops.autoShopName
+            tempDesc = autoshops.autoShopDesc
+            tempImg = autoshops.autoShopImg
+            tempAddress = autoshops.autoShopAddress
         }
         startSegue()
 
