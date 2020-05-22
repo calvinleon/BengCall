@@ -11,11 +11,12 @@ import UIKit
 class UserHomeVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
     
-    var autoShopName = ""
     var tempName = ""
-
+    var tempDesc = ""
+    var tempAdress = ""
+    var tempService = [String]()
+    var tempImg = UIImage()
     
     var autoShops = AutoShop.fetchAutoShop()
     
@@ -48,7 +49,8 @@ class UserHomeVC: UIViewController {
         if let destination = segue.destination as? AutoShopDetailVC {
         
             destination.autoshopName = tempName
-            
+            destination.autoshopAdress = tempAdress
+            destination.autoshopImg = tempImg
         }
     }
 }
@@ -98,6 +100,8 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
         
             let autoshop = autoShops[tempIndex.item]
             tempName = autoshop.autoShopName
+            tempAdress = autoshop.autoShopAddress
+            tempImg = autoshop.autoShopImg
         
             startSegue()
             
