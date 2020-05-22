@@ -12,6 +12,12 @@ class AutoShop
 {
     var autoShopName = ""
     var autoShopAddress = ""
+    var autoShopDesc = ""
+    var autoShopServices = [String]()
+    var autoShopFacilities = [String]()
+    var autoShopLong = 0
+    var autoShopLang = 0
+    
     var autoShopImg: UIImage
     
     init(autoShopName: String, autoShopImg: UIImage, autoShopAddress: String)
