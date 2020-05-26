@@ -14,6 +14,12 @@ class UserBookingVC: UIViewController {
 
     @IBOutlet weak var calendar: FSCalendar!
     var selectedDate = Date()
+    var bookingTime = ""
+    var phoneNumber = ""
+    var motorType = ""
+    var motorNumber = ""
+    var name = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +27,10 @@ class UserBookingVC: UIViewController {
         calendar.dataSource = self
         calendar.delegate = self
         calendar.scope = FSCalendarScope.week
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
