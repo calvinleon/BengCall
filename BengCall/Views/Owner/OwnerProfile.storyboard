@@ -36,6 +36,7 @@
                                             <constraint firstItem="Iho-la-ait" firstAttribute="leading" secondItem="G95-i9-2aH" secondAttribute="leading" constant="20" id="Rda-DM-KEm"/>
                                             <constraint firstAttribute="bottom" secondItem="Iho-la-ait" secondAttribute="bottom" constant="20" id="jhl-cv-SkY"/>
                                         </constraints>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="T8D-ZQ-oil" detailTextLabel="HLE-o7-NRH" style="IBUITableViewCellStyleValue1" id="huH-6S-MbI">
                                         <rect key="frame" x="0.0" y="268" width="414" height="43.5"/>
@@ -60,6 +61,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="sXA-V6-7Gx" detailTextLabel="v43-tT-mvM" style="IBUITableViewCellStyleValue1" id="SCi-a1-xX0">
                                         <rect key="frame" x="0.0" y="311.5" width="414" height="43.5"/>
@@ -84,6 +86,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="jrN-P1-Pi4" detailTextLabel="4em-fG-tch" style="IBUITableViewCellStyleValue1" id="yDG-bA-Ge2">
                                         <rect key="frame" x="0.0" y="355" width="414" height="43.5"/>
@@ -108,6 +111,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="Hj2-PX-DTi" detailTextLabel="30k-Vc-8SL" style="IBUITableViewCellStyleValue1" id="R63-da-b1G">
                                         <rect key="frame" x="0.0" y="398.5" width="414" height="43.5"/>
@@ -132,6 +136,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="Per-OS-NIh" detailTextLabel="sbN-vb-6QR" style="IBUITableViewCellStyleValue1" id="V3G-4h-6Nh">
                                         <rect key="frame" x="0.0" y="442" width="414" height="43.5"/>
@@ -156,6 +161,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="RhS-sf-yvX" detailTextLabel="MdF-tW-XSY" style="IBUITableViewCellStyleValue1" id="BeV-sG-LFq">
                                         <rect key="frame" x="0.0" y="485.5" width="414" height="43.5"/>
@@ -180,6 +186,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -239,6 +246,16 @@
                                 <rect key="frame" x="0.0" y="57" width="414" height="751"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="b1K-6z-SKG">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1K-6z-SKG" id="6bH-Am-YpH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
