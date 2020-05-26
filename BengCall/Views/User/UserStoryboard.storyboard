@@ -23,7 +23,7 @@
             <objects>
                 <viewController title="Home" id="iE4-SL-W8U" customClass="UserHomeVC" customModule="BengCall" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGH-Mc-Anv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSD City, Tangerang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eZ-P7-e3a">
@@ -82,6 +82,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="bookBtn:" destination="EPn-bW-Kaw" eventType="touchUpInside" id="jhl-23-xVy"/>
+                                                        <segue destination="iZo-Of-AAp" kind="show" id="P71-fH-LVP"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="~ 2.0 Km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-t5-7RY">
@@ -234,7 +235,6 @@
                     <navigationItem key="navigationItem" id="K0X-ic-S9S"/>
                     <connections>
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
-                        <segue destination="iZo-Of-AAp" kind="show" id="w6j-vh-XMa"/>
                         <segue destination="WUQ-U5-aFp" kind="show" identifier="autoshopDetailSegue" id="hkM-UW-IQ0"/>
                     </connections>
                 </viewController>
@@ -482,6 +482,9 @@ Science Group. </string>
                                         <state key="normal" title="Book">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="iZo-Of-AAp" kind="show" id="HSC-Qc-f3w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -524,7 +527,6 @@ Science Group. </string>
                         <outlet property="serviceView1" destination="tQJ-5M-LKw" id="0VK-5r-VH2"/>
                         <outlet property="serviceView2" destination="iEV-Ap-y1h" id="kLb-p1-Faq"/>
                         <outlet property="serviceView3" destination="Neg-Hu-5qq" id="2qO-il-wgS"/>
-                        <segue destination="iZo-Of-AAp" kind="show" id="XIY-WO-rL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBk-g1-TE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -602,6 +604,9 @@ Science Group. </string>
                                 <state key="normal" title="8:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="msH-4n-2GA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-nb-RuW">
                                 <rect key="frame" x="20" y="362" width="70" height="30"/>
@@ -610,6 +615,9 @@ Science Group. </string>
                                 <state key="normal" title="9:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="son-4a-vSt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSV-7S-waM">
                                 <rect key="frame" x="20" y="410" width="70" height="30"/>
@@ -618,6 +626,9 @@ Science Group. </string>
                                 <state key="normal" title="10:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="sfO-aw-Vrz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Afternoon" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDf-3u-eBv">
                                 <rect key="frame" x="171" y="284" width="72" height="18"/>
@@ -633,6 +644,9 @@ Science Group. </string>
                                 <state key="normal" title="11:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="cQg-9X-Gdb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-sH-kbz">
                                 <rect key="frame" x="172" y="362" width="70" height="30"/>
@@ -641,6 +655,9 @@ Science Group. </string>
                                 <state key="normal" title="13:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="Pfd-zz-SBp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM0-Vb-o43">
                                 <rect key="frame" x="172" y="410" width="70" height="30"/>
@@ -649,6 +666,9 @@ Science Group. </string>
                                 <state key="normal" title="14:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="rCe-T1-k0k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evening" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQt-hC-R1U">
                                 <rect key="frame" x="331" y="284" width="57" height="18"/>
@@ -664,6 +684,9 @@ Science Group. </string>
                                 <state key="normal" title="16:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="m5a-2b-deh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-67-vFt">
                                 <rect key="frame" x="324" y="362" width="70" height="30"/>
@@ -672,6 +695,9 @@ Science Group. </string>
                                 <state key="normal" title="17:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="Isn-qt-0vu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-kg-H6q">
                                 <rect key="frame" x="172" y="458" width="70" height="30"/>
@@ -680,6 +706,9 @@ Science Group. </string>
                                 <state key="normal" title="15:00">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="gtz-yz-Iqh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luU-HH-v2E">
                                 <rect key="frame" x="20" y="738" width="374" height="50"/>
@@ -698,6 +727,9 @@ Science Group. </string>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iE4-SL-W8U" kind="show" id="5T4-wu-oI1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -710,12 +742,21 @@ Science Group. </string>
                     </view>
                     <navigationItem key="navigationItem" id="fr4-wl-1a0"/>
                     <connections>
+                        <outlet property="btn1" destination="xG1-MI-fLE" id="qu0-Ud-uDU"/>
+                        <outlet property="btn2" destination="Zg9-nb-RuW" id="LJg-Xa-3QL"/>
+                        <outlet property="btn3" destination="pSV-7S-waM" id="AXP-q0-pw6"/>
+                        <outlet property="btn4" destination="0Da-gk-nKm" id="0EP-K0-iUx"/>
+                        <outlet property="btn5" destination="SZM-sH-kbz" id="jdG-Ik-Wbm"/>
+                        <outlet property="btn6" destination="XM0-Vb-o43" id="w9h-P3-0HB"/>
+                        <outlet property="btn7" destination="CDo-kg-H6q" id="BL6-AP-iR7"/>
+                        <outlet property="btn8" destination="Ykx-mP-Byh" id="TR2-Hn-UcT"/>
+                        <outlet property="btn9" destination="CXt-67-vFt" id="VCt-3r-2QO"/>
                         <outlet property="calendar" destination="54x-td-cyt" id="s5B-ev-FvZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcp-hR-LqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5072463768117" y="1146.4285714285713"/>
+            <point key="canvasLocation" x="1086" y="1146"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="btw-EE-cry">
@@ -758,8 +799,9 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w6j-vh-XMa"/>
+        <segue reference="HSC-Qc-f3w"/>
         <segue reference="hkM-UW-IQ0"/>
+        <segue reference="5T4-wu-oI1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
