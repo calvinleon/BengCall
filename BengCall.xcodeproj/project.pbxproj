@@ -11,7 +11,6 @@
 		5A54A5E42476616B00092736 /* UserSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A54A5E32476616B00092736 /* UserSignUp.storyboard */; };
 		5A54A5E82476685B00092736 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54A5E72476685B00092736 /* CloudKit.framework */; };
 		5A54A5EA247668E100092736 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54A5E9247668E100092736 /* CloudKitHelper.swift */; };
-		5A6EEA62247416E0002CCF04 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */; };
 		5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */; };
 		5A7C73E12463F503009ABFC3 /* UserSearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */; };
 		5A7C73E72463F935009ABFC3 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */; };
@@ -40,6 +39,7 @@
 		83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CCE80724645064000EDF9C /* OwnerProfile.storyboard */; };
 		83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE80B246452BF000EDF9C /* OwnerProfileVC.swift */; };
 		83CCE81224647F84000EDF9C /* Authoshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCE81124647F84000EDF9C /* Authoshop.swift */; };
+		B0E50AE485510AA55FE5D58A /* Pods_BengCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */; };
 		D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AB2462761F00752C64 /* AppDelegate.swift */; };
 		D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AD2462761F00752C64 /* SceneDelegate.swift */; };
 		D743F3B02462761F00752C64 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743F3AF2462761F00752C64 /* MainVC.swift */; };
@@ -55,12 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360892B3FCCE4A19D93D7590 /* Pods-BengCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengCall.debug.xcconfig"; path = "Target Support Files/Pods-BengCall/Pods-BengCall.debug.xcconfig"; sourceTree = "<group>"; };
+		4F98F8120DEBA795704BBE22 /* Pods-BengCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BengCall.release.xcconfig"; path = "Target Support Files/Pods-BengCall/Pods-BengCall.release.xcconfig"; sourceTree = "<group>"; };
 		5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTableVC.swift; sourceTree = "<group>"; };
 		5A54A5E32476616B00092736 /* UserSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSignUp.storyboard; sourceTree = "<group>"; };
 		5A54A5E52476683800092736 /* BengCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BengCall.entitlements; sourceTree = "<group>"; };
 		5A54A5E72476685B00092736 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5A54A5E9247668E100092736 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
-		5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSearchLocation.storyboard; sourceTree = "<group>"; };
 		5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchLocationVC.swift; sourceTree = "<group>"; };
 		5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
+		5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpTableVC.swift; sourceTree = "<group>"; };
 		5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpVC.swift; sourceTree = "<group>"; };
 		832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
@@ -115,16 +117,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A54A5E82476685B00092736 /* CloudKit.framework in Frameworks */,
+				B0E50AE485510AA55FE5D58A /* Pods_BengCall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B369D78A79F12613F326CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				360892B3FCCE4A19D93D7590 /* Pods-BengCall.debug.xcconfig */,
+				4F98F8120DEBA795704BBE22 /* Pods-BengCall.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5A54A5E62476685B00092736 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5A54A5E72476685B00092736 /* CloudKit.framework */,
+				5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +150,6 @@
 				5A7C73E82463FA82009ABFC3 /* UserHistory.storyboard */,
 				5A7C73E62463F935009ABFC3 /* UserProfile.storyboard */,
 				5A7C73DE2463F4D4009ABFC3 /* UserSearchLocation.storyboard */,
-				5A6EEA61247416E0002CCF04 /* Onboarding.storyboard */,
 				5A54A5E32476616B00092736 /* UserSignUp.storyboard */,
 			);
 			path = User;
@@ -213,6 +226,7 @@
 				D743F3CF2462761F00752C64 /* BengCallUITests */,
 				D743F3A92462761F00752C64 /* Products */,
 				5A54A5E62476685B00092736 /* Frameworks */,
+				42B369D78A79F12613F326CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D743F3D52462761F00752C64 /* Build configuration list for PBXNativeTarget "BengCall" */;
 			buildPhases = (
+				6ABF968306E86167E08519CD /* [CP] Check Pods Manifest.lock */,
 				D743F3A42462761F00752C64 /* Sources */,
 				D743F3A52462761F00752C64 /* Frameworks */,
 				D743F3A62462761F00752C64 /* Resources */,
+				73C0490D4246EE113CE4202C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,7 +354,6 @@
 				83CCE8012463D816000EDF9C /* OwnerStoryboard.storyboard in Resources */,
 				5A7C73DF2463F4D4009ABFC3 /* UserSearchLocation.storyboard in Resources */,
 				83B353C324790D24000C027F /* AutoshopRegistration.storyboard in Resources */,
-				5A6EEA62247416E0002CCF04 /* Onboarding.storyboard in Resources */,
 				5A7C73E92463FA82009ABFC3 /* UserHistory.storyboard in Resources */,
 				D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */,
 				83CCE80824645064000EDF9C /* OwnerProfile.storyboard in Resources */,
@@ -353,6 +368,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ABF968306E86167E08519CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BengCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C0490D4246EE113CE4202C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengCall/Pods-BengCall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BengCall/Pods-BengCall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BengCall/Pods-BengCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D743F3A42462761F00752C64 /* Sources */ = {
@@ -528,6 +585,7 @@
 		};
 		D743F3D62462761F00752C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360892B3FCCE4A19D93D7590 /* Pods-BengCall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BengCall/BengCall.entitlements;
@@ -547,6 +605,7 @@
 		};
 		D743F3D72462761F00752C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F98F8120DEBA795704BBE22 /* Pods-BengCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BengCall/BengCall.entitlements;

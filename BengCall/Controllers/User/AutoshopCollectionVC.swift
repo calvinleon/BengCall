@@ -17,6 +17,10 @@ class AutoshopCollectionVC: UICollectionViewCell {
     @IBOutlet weak var autoShopNameLbl: UILabel!
     @IBOutlet weak var autoShopAddressLbl: UILabel!
     @IBOutlet weak var serviceStackView: UIStackView!
+    @IBOutlet weak var serviceView1: UIView!
+    @IBOutlet weak var serviceView2: UIView!
+    @IBOutlet weak var serviceView3: UIView!
+    @IBOutlet weak var bookBtn: UIButton!
     
     
     @IBAction func bookBtn(_ sender: Any) {
@@ -46,7 +50,12 @@ class AutoshopCollectionVC: UICollectionViewCell {
         self.layer.borderWidth = 5.0
         self.layer.borderColor = UIColor.clear.cgColor
         self.layer.masksToBounds = true
-                
+        
+        self.serviceView1.layer.cornerRadius = 8.0
+        self.serviceView2.layer.cornerRadius = 8.0
+        self.serviceView3.layer.cornerRadius = 8.0
+        self.bookBtn.layer.cornerRadius = 8.0
+        
         self.contentView.layer.cornerRadius = 15.0
         self.contentView.layer.borderWidth = 5.0
         self.contentView.layer.borderColor = UIColor.clear.cgColor
