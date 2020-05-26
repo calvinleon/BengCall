@@ -3,7 +3,9 @@
 
 target 'BengCall' do
 
-    pod 'FSCalendar'
+  use_frameworks!
+
+  pod 'FSCalendar'
 
 
 end
