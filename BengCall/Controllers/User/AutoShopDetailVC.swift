@@ -31,6 +31,8 @@ class AutoShopDetailVC: UIViewController {
     var autoshopAdress = ""
     var autoshopImg = UIImage()
     var autoshopService = [String]()
+    var autoshopPhoneNumber = ""
+    
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
@@ -55,6 +57,14 @@ class AutoShopDetailVC: UIViewController {
         initialSetup()
     }
     
+    @IBAction func callAutoShop(_ sender: Any) {
+        if let url = URL(string: "tel://\(autoshopPhoneNumber)"),
+        UIApplication.shared.canOpenURL(url) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    
     func initialSetup() {
         detailView.layer.cornerRadius = 15.0
         serviceView1.layer.cornerRadius = 7
@@ -63,4 +73,5 @@ class AutoShopDetailVC: UIViewController {
         
         bookBtn.layer.cornerRadius = 7
     }
+    
 }

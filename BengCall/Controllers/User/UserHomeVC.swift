@@ -18,6 +18,7 @@ class UserHomeVC: UIViewController {
     var tempAdress = ""
     var tempService = [String]()
     var tempImg = UIImage()
+    var tempPhoneNumber = ""
     
     var autoShops = AutoShop.fetchAutoShop()
     
@@ -46,6 +47,7 @@ class UserHomeVC: UIViewController {
             destination.autoshopImg = tempImg
             destination.autoshopDesc = tempDesc
             destination.autoshopService = tempService
+            destination.autoshopPhoneNumber = tempPhoneNumber
             
         }
     }
@@ -100,6 +102,7 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
             tempImg = autoshop.autoShopImg
             tempDesc = autoshop.autoShopDesc
             tempService = autoshop.autoShopServices
+            tempPhoneNumber = autoshop.autoShopPhoneNumber
             
             startSegue()
             

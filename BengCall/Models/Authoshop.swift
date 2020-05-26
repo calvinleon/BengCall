@@ -17,10 +17,10 @@ class AutoShop
     var autoShopServices = [String]()
     var autoShopPhoneNumber = ""
     var autoShopCapatiy = ""
+    var autoShopImg: UIImage
     
     var autoShopLong = 0.0
     var autoShopLang = 0.0
-    var autoShopImg: UIImage
     
     init(autoShopName: String, autoShopImg: UIImage, autoShopAddress: String, autoShopDesc: String, autoShopServices: [String], autoShopPhoneNumber: String, autoShopCapacity: String)
     {
