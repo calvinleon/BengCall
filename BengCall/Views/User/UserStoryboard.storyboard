@@ -186,6 +186,11 @@
                                             <outlet property="autoShopAddressLbl" destination="mtF-ZG-bq9" id="d2I-Ts-0HH"/>
                                             <outlet property="autoShopImgView" destination="JNN-Ij-c1n" id="iN2-l6-SfM"/>
                                             <outlet property="autoShopNameLbl" destination="d3W-57-OEo" id="OHJ-p9-2dg"/>
+                                            <outlet property="bookBtn" destination="kNN-1j-q9B" id="oNv-0U-eYg"/>
+                                            <outlet property="serviceStackView" destination="YOm-Rh-I0E" id="aLs-kO-DGs"/>
+                                            <outlet property="serviceView1" destination="dGJ-cB-RYL" id="WCE-2f-bcG"/>
+                                            <outlet property="serviceView2" destination="FpQ-oD-lJa" id="I9v-YW-axl"/>
+                                            <outlet property="serviceView3" destination="pIb-cd-d4q" id="hZL-FZ-7kq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -591,8 +596,17 @@ Science Group. </string>
                     <navigationItem key="navigationItem" id="4gA-HD-7Ec"/>
                     <connections>
                         <outlet property="autoshopNameLbl" destination="UG1-rE-wyj" id="Ctj-kM-gLv"/>
+                        <outlet property="bookBtn" destination="GGs-yY-3Ct" id="Ab8-p2-JIW"/>
                         <outlet property="descLbl" destination="e3Z-IR-fey" id="rAH-eZ-vgu"/>
                         <outlet property="detailView" destination="ZGq-Uw-uBL" id="sE9-jo-Nr8"/>
+                        <outlet property="facilitiesView1" destination="lD1-Pw-bq5" id="Kdr-AD-N2J"/>
+                        <outlet property="facilitiesView2" destination="FWA-OW-7eP" id="D7p-Nf-jS9"/>
+                        <outlet property="facilitiesView3" destination="MEU-Tm-DPO" id="gLJ-Fy-S3m"/>
+                        <outlet property="facilitiesView4" destination="xjk-dk-tJo" id="kBf-Zv-vgd"/>
+                        <outlet property="serviceView1" destination="tQJ-5M-LKw" id="0VK-5r-VH2"/>
+                        <outlet property="serviceView2" destination="iEV-Ap-y1h" id="kLb-p1-Faq"/>
+                        <outlet property="serviceView3" destination="Neg-Hu-5qq" id="2qO-il-wgS"/>
+                        <outlet property="serviceView4" destination="md5-eK-bmg" id="mJf-fd-6cT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBk-g1-TE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -640,13 +654,13 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VmQ-8P-ogX"/>
+        <segue reference="rBj-gs-8R2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="map" width="343" height="149"/>
         <image name="map" catalog="system" width="128" height="113"/>
+        <image name="map" width="343" height="149"/>
     </resources>
 </document>
