@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRE-nJ-O0U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -47,6 +47,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.1176470588" green="0.36470588240000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="09r-wb-XZu" kind="presentation" modalPresentationStyle="fullScreen" id="yW7-vd-ahQ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="29866 -2" translatesAutoresizingMaskIntoConstraints="NO" id="m74-vv-R0N">
                                 <rect key="frame" x="20" y="142" width="394" height="447"/>
@@ -59,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVc-WB-vEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1213.0434782608697" y="-463.39285714285711"/>
+            <point key="canvasLocation" x="-1826" y="-333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xsz-QW-AzX">
@@ -84,6 +87,9 @@
                                 <state key="normal" title="Previous">
                                     <color key="titleColor" red="0.1176470588" green="0.36470588240000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zRE-nJ-O0U" kind="presentation" modalPresentationStyle="fullScreen" id="1Ua-eb-6gq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR6-if-7NH">
                                 <rect key="frame" x="111" y="176" width="72" height="36"/>
@@ -99,6 +105,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.1176470588" green="0.36470588240000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wDL-jD-nxH" kind="presentation" modalPresentationStyle="fullScreen" id="U17-rY-02E"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQk-Ma-fco">
                                 <rect key="frame" x="188" y="176" width="115" height="36"/>
@@ -118,10 +127,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8pM-jo-sfG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e1W-b5-mEg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FUE-Ov-i79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-461" y="-463"/>
+            <point key="canvasLocation" x="-523" y="-333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bom-D3-VuT">
@@ -174,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLg-wF-K5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="-463"/>
+            <point key="canvasLocation" x="454" y="-333"/>
         </scene>
     </scenes>
     <resources>
