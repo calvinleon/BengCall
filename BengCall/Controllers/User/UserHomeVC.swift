@@ -44,6 +44,9 @@ class UserHomeVC: UIViewController {
             destination.autoshopName = tempName
             destination.autoshopAdress = tempAdress
             destination.autoshopImg = tempImg
+            destination.autoshopDesc = tempDesc
+            destination.autoshopService = tempService
+            
         }
     }
 }
@@ -95,7 +98,9 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
             tempName = autoshop.autoShopName
             tempAdress = autoshop.autoShopAddress
             tempImg = autoshop.autoShopImg
-        
+            tempDesc = autoshop.autoShopDesc
+            tempService = autoshop.autoShopServices
+            
             startSegue()
             
        }
