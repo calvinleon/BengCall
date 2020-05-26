@@ -68,7 +68,7 @@
                                     <color key="titleColor" red="0.1176470588" green="0.36470588240000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Vz-dh-Aaz" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="eLD-2M-zWf"/>
+                                    <segue destination="1Vz-dh-Aaz" kind="show" id="eLD-2M-zWf"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="29866 -2" translatesAutoresizingMaskIntoConstraints="NO" id="aPo-eM-mB6">
@@ -124,7 +124,7 @@
                                     <color key="titleColor" red="0.1176470588" green="0.36470588240000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9IX-WY-a1X" kind="push" id="HrV-Sf-97c"/>
+                                    <segue destination="9IX-WY-a1X" kind="show" id="lI9-d3-q8b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIv-iD-G5T">
@@ -145,6 +145,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9aL-xk-35c"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2hX-Sc-1lO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XvZ-bz-cBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +156,7 @@
             <objects>
                 <viewController id="9IX-WY-a1X" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTL-QV-NKl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="29866 -4" translatesAutoresizingMaskIntoConstraints="NO" id="ctV-Gz-1L2">

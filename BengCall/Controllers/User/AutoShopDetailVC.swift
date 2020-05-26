@@ -18,10 +18,6 @@ class AutoShopDetailVC: UIViewController {
     @IBOutlet weak var serviceView3: UIView!
     @IBOutlet weak var serviceView4: UIView!
     @IBOutlet weak var bookBtn: UIButton!
-    @IBOutlet weak var facilitiesView1: UIView!
-    @IBOutlet weak var facilitiesView2: UIView!
-    @IBOutlet weak var facilitiesView3: UIView!
-    @IBOutlet weak var facilitiesView4: UIView!
     
     var autoshopName = ""
     var autoshopDesc = ""
@@ -29,11 +25,11 @@ class AutoShopDetailVC: UIViewController {
     var autoshopImg = UIImage()
 
     override func viewWillAppear(_ animated: Bool) {
-//        self.navigationController?.isNavigationBarHidden = false
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationBar.isTranslucent = true
-//        self.navigationController?.view.backgroundColor = UIColor.clear
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
     }
     
     
@@ -53,10 +49,6 @@ class AutoShopDetailVC: UIViewController {
         serviceView3.layer.cornerRadius = 7
         serviceView4.layer.cornerRadius = 7
                
-        facilitiesView1.layer.cornerRadius = 7
-        facilitiesView2.layer.cornerRadius = 7
-        facilitiesView3.layer.cornerRadius = 7
-        facilitiesView4.layer.cornerRadius = 7
         bookBtn.layer.cornerRadius = 7
     }
 }
