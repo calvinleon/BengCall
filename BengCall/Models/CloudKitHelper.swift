@@ -37,39 +37,42 @@ struct CloudKitHelper {
         }
     }
     
-    func fetchAll (onCompleted: @escaping ([CKRecord]) -> Void) {
+    func fetchAll (autoshopName: String, onCompleted: @escaping ([CKRecord]) -> Void) {
         let predicate = NSPredicate(value: true)
+        //let predicate = NSPredicate(format: "autoshopName MATCHES[cd] @%", autoshopName)
         let query = CKQuery(recordType: "Booking", predicate: predicate)
         
         database.perform(query, inZoneWith: nil) { (records, error) in
             onCompleted(records!)
+            print(records!)
         }
     }
     
     
     
-    fileprivate func updateDate() {
-        let id = CKRecord.ID(recordName: "isDone")
-        let booking = CKRecord(recordType: "Booking")
-        
-        database.fetch(withRecordID: id) { (record, error) in
-            
-            if let record = record, error == nil {
-                
-                // update your record here
-                booking["isDone"] = true
-                
-                self.database.save(record) { (_, error) in
-                    if error != nil {
-                        print("error when updating data \(error ?? "nil" as! Error)")
-                    } else {
-                        print("update record isDone = \(booking["isDone"] ?? "nil" )")
-                    }
-                }
-            }
-            
-        }
-    }
+//    fileprivate func updateDate() {
+//        let booking = CKRecord(recordType: "Booking")
+//        let id = booking.recordID.recordName //ID(recordName: "isDone")
+//
+//
+//        database.fetch(withRecordID: id) { (record, error) in
+//
+//            if let record = record, error == nil {
+//
+//                // update your record here
+//                booking["isDone"] = !((booking["isDone"] != nil)) //true
+//
+//                self.database.save(record) { (_, error) in
+//                    if error != nil {
+//                        print("error when updating data \(error ?? "nil" as! Error)")
+//                    } else {
+//                        print("update record isDone = \(booking["isDone"] ?? "nil" )")
+//                    }
+//                }
+//            }
+//
+//        }
+//    }
     
     func confirmUpdateBooking(custName: String, onCompleted: @escaping ([CKRecord]) -> Void){
         
@@ -79,7 +82,16 @@ struct CloudKitHelper {
         database.perform(query, inZoneWith: nil) { (records, error) in
             onCompleted(records!)
             
-            self.updateDate()
+            print("load data with predicate: \(predicate) \n\n \(records!)")
+            
+            records![0]["isDone"] = true //!(records![0]["isDone"] != nil)
+            
+//            for record: CKRecord in records! {
+//
+//                record["isDone"] = true as CKRecordValue
+//
+//            }
+            
         }
         
         
