@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class OwnerLoginVC: UIViewController {
 
@@ -16,6 +17,10 @@ class OwnerLoginVC: UIViewController {
     
     var ownerEmail: String?
     var ownerPassword: String?
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var ownerData = [Owner]()
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
@@ -48,21 +53,60 @@ class OwnerLoginVC: UIViewController {
         guard let password = ownerLoginTexField?.ownerLoginPasswordTextField.text else { return }
         
         if email.isEmpty && password.isEmpty {
-            alertLogin()
+            alertLogin(msg: "All Textfield")
         } else if email.isEmpty {
-            alertLogin()
+            alertLogin(msg: "Email")
         } else if password.isEmpty {
-            alertLogin()
+            alertLogin(msg: "Password")
         }
         
         ownerEmail = email
         ownerPassword = password
+        
+        // Try to login
+        loadOwnerData()
         
         
     }
     
     
     @IBAction func unwindToLogin(sender: UIStoryboardSegue){
+        
+    }
+    
+    
+    
+    func loadOwnerData(with request: NSFetchRequest<Owner> = Owner.fetchRequest() ){
+        
+        let emailPredicate = NSPredicate(format: "email == %@", self.ownerEmail!)
+        let passwordPredicate = NSPredicate(format: "password == %@", self.ownerPassword!)
+        
+        let compoundPredicate = NSCompoundPredicate.init(type: .and, subpredicates: [emailPredicate, passwordPredicate])
+        
+        print("Login Predicate = \(emailPredicate) and \(passwordPredicate)")
+        
+        request.predicate = compoundPredicate
+        
+        do {
+            ownerData = try context.fetch(request)
+            
+            if !ownerData.isEmpty {
+                
+                self.performSegue(withIdentifier: "ownerLogin", sender: self)
+                
+                print("\(ownerData)")
+                
+            } else {
+                
+                print("owner data is Nil \(ownerData)")
+                alertLogin(msg: "Email or Password incorrect!")
+                
+            }
+            
+            
+        } catch {
+            print("=======\n\nError fetching owner login data from context \(error)\n\n=======")
+        }
         
     }
     
@@ -81,9 +125,8 @@ extension OwnerLoginVC {
         ownerLoginButton.layer.shadowOffset = CGSize(width: 0, height: 3)
     }
     
-    func alertLogin(){
-        
-        let alert = UIAlertController(title: "Failed", message: "Email and Password is empty", preferredStyle: .alert)
+    func alertLogin(msg: String){
+        let alert = UIAlertController(title: "Failed", message: "\(msg)", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .cancel) { (cancel) in
             alert.dismiss(animated: true, completion: nil)
         }

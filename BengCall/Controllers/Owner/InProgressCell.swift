@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 protocol InProgressCellDelegate {
     //func
@@ -53,20 +54,38 @@ class InProgressCell: UITableViewCell {
         self.CallButton.layer.cornerRadius = 6.0
     }
     
-    
-    func setupInsideCell(bookingData: BookingModel){
-        bookingItem = bookingData
-        BookingName.text = bookingData.name
-        BookingTime.text = bookingData.bookingTime
-        BookingMotorType.text = bookingData.motorType
-        BookingPlateNumber.text = bookingData.motorNumber
-        BookingPhoneNumber.text = bookingData.phoneNumber
+    //bookingData: BookingModel
+    func setupInsideCell(bookingData: CKRecord){
+        //bookingItem = bookingData
+        BookingName.text = bookingData["customerName"]
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH.mm"
+        
+        let bookingDate = dateFormatter.string(from: bookingData["datetime"] as! Date)
+        
+        BookingTime.text = bookingDate
+        BookingMotorType.text = bookingData["motorType"]
+        BookingPlateNumber.text = bookingData["licensePlate"]
+        BookingPhoneNumber.text = bookingData["phoneNumber"]
         
         // Creata a tag for the button
-        DoneButton.tag = bookingData.bookingId
-        CallButton.tag = bookingData.bookingId
+        //DoneButton.tag = bookingData.bookingId
+        //CallButton.tag = bookingData.bookingId
     }
+    
+//    func setupInsideCell(bookingData: BookingModel){
+//        bookingItem = bookingData
+//        BookingName.text = bookingData.name
+//        BookingTime.text = bookingData.bookingTime
+//        BookingMotorType.text = bookingData.motorType
+//        BookingPlateNumber.text = bookingData.motorNumber
+//        BookingPhoneNumber.text = bookingData.phoneNumber
+//
+//        // Creata a tag for the button
+//        DoneButton.tag = bookingData.bookingId
+//        CallButton.tag = bookingData.bookingId
+//    }
     
     
 }
