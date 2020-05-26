@@ -21,12 +21,12 @@ class UserHistoryVC: UIViewController, UITableViewDelegate {
         
         historyTableView.delegate = self
         
-        helper.fetchAll { (records) in
-            self.histories = records
-            DispatchQueue.main.async {
-                self.historyTableView.reloadData()
-            }
-        }
+//        helper.fetchAll { (records) in
+//            self.histories = records
+//            DispatchQueue.main.async {
+//                self.historyTableView.reloadData()
+//            }
+//        }
 
         // Do any additional setup after loading the view.
     }
@@ -44,12 +44,12 @@ class UserHistoryVC: UIViewController, UITableViewDelegate {
 
 }
 
-extension UserHistoryVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return histories.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return 0
-    }
-}
+//extension UserHistoryVC: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return histories.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return
+//    }
+//}
