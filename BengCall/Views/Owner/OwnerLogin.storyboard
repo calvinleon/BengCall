@@ -7,6 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--OwnerStoryboard-->
+        <scene sceneID="mDx-Xv-VyX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OwnerStoryboard" id="sDe-3b-ZiG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XoF-ws-8i8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZx-qv-PPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1227" y="55"/>
+        </scene>
         <!--OwnerSignUp-->
         <scene sceneID="F2c-ej-Gpy">
             <objects>
@@ -113,6 +123,7 @@
                     <navigationItem key="navigationItem" id="NgW-8h-eMT"/>
                     <connections>
                         <outlet property="ownerLoginButton" destination="gsS-Q0-JKe" id="Kc8-ps-NwO"/>
+                        <segue destination="sDe-3b-ZiG" kind="show" identifier="ownerLogin" id="UYa-nd-s2e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNB-4X-nDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
