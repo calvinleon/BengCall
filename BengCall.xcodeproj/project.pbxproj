@@ -19,6 +19,8 @@
 		5A7C73EB2463FB30009ABFC3 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */; };
 		5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */; };
 		5A7C73EF2463FC29009ABFC3 /* UserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */; };
+		5AA25D0B247CC4AD003D07E7 /* UserSignUpTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */; };
+		5AA25D0D247CC4F2003D07E7 /* UserSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */; };
 		832FC59A24741C6100B5AEF7 /* InProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */; };
 		832FC59C24742B9900B5AEF7 /* InProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FC59B24742B9900B5AEF7 /* InProgressCell.swift */; };
 		8330E3D4247959FF00C9A4A5 /* OwnerLoginTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330E3D3247959FF00C9A4A5 /* OwnerLoginTableVC.swift */; };
@@ -66,6 +68,8 @@
 		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
+		5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpTableVC.swift; sourceTree = "<group>"; };
+		5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpVC.swift; sourceTree = "<group>"; };
 		832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
 		832FC59B24742B9900B5AEF7 /* InProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCell.swift; sourceTree = "<group>"; };
 		8330E3D3247959FF00C9A4A5 /* OwnerLoginTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerLoginTableVC.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */,
 				5A7C73E02463F503009ABFC3 /* UserSearchLocationVC.swift */,
 				5A16A4772471908700AA4D4D /* SearchViewTableVC.swift */,
+				5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */,
+				5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -372,7 +378,9 @@
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
 				83B353C724792196000C027F /* AutoshopRegistTableVC.swift in Sources */,
 				832FC59C24742B9900B5AEF7 /* InProgressCell.swift in Sources */,
+				5AA25D0D247CC4F2003D07E7 /* UserSignUpVC.swift in Sources */,
 				D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */,
+				5AA25D0B247CC4AD003D07E7 /* UserSignUpTableVC.swift in Sources */,
 				83CCE80C246452BF000EDF9C /* OwnerProfileVC.swift in Sources */,
 				83B353BF2479079D000C027F /* OwnerSignUpVC.swift in Sources */,
 				8330E3D4247959FF00C9A4A5 /* OwnerLoginTableVC.swift in Sources */,
