@@ -7,8 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class UserSignUpVC: UIViewController {
+    
+    var userSignUpTFContainer: UserSignUpTableVC?
+    
+    var tempUserName: String?
+    var tempUserEmail: String?
+    var tempUserPassword: String?
+    var tempUserPhoneNumber: String?
+    var tempUserMotorType: String?
+    var tempUserLicenseNumber: String?
+    var tempUserAddress: String?
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +29,24 @@ class UserSignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func userSignUpButton(_ sender: Any) {
     }
-    */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let userSignUpTableVC = segue.destination as? UserSignUpTableVC, segue.identifier == "embedUserSignUp" {
+            
+            userSignUpTFContainer = userSignUpTableVC
+        }
+    }
 }
+
+//extension UserSignUpVC {
+//
+//    func updateData(sourceVC: OwnerSignUpTableVC?) {
+//
+//        guard let name = sourceVC?..text, name != "" else {
+//        alertLogin(msg: "Name")
+//        return }
+//    }
+//}
