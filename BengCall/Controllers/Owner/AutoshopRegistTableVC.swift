@@ -33,14 +33,12 @@ class AutoshopRegistTableVC: UITableViewController {
 
     
     @IBAction func ownerIDCardButtonPressed(_ sender: UIButton) {
-        
         showImagePickerActionSheet(tag: sender.tag)
         
     }
     
     
     @IBAction func ownerSelfieIDCardButtonPressed(_ sender: UIButton) {
-        
         showImagePickerActionSheet(tag: sender.tag)
     }
     

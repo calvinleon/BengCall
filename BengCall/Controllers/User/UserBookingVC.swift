@@ -56,7 +56,7 @@ class UserBookingVC: UIViewController {
         motorType = "Honda Vario 150"
         licensePlate = "B 4099 BXC"
         phoneNumber = "08999999999"
-        autoshopName = "Agung Jaya Motor"
+        autoshopName = "AHASS Omega Motor"
         
         calendar.dataSource = self
         calendar.delegate = self
@@ -90,7 +90,9 @@ class UserBookingVC: UIViewController {
         } else {
             let alert = UIAlertController(title: "Booking", message: "Please Choose Date and Time", preferredStyle: .alert)
             self.present(alert, animated: true)
-
+            let cancel = UIAlertAction(title: "OK", style: .default, handler: { action in
+            })
+            alert.addAction(cancel)
         }
         
     }

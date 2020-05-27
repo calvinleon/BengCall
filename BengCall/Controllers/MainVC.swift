@@ -10,8 +10,7 @@ import UIKit
 
 class MainVC: UIViewController {
     
-    @IBOutlet weak var ownerBtn: UIButton!
-    @IBOutlet weak var userBtn: UIButton!
+
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
@@ -21,8 +20,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        userBtn.layer.cornerRadius = 8.0
-//        ownerBtn.layer.cornerRadius = 8.0
+        
     }
 
 
