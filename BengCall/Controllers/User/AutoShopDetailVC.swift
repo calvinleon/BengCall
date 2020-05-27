@@ -25,6 +25,7 @@ class AutoShopDetailVC: UIViewController {
     @IBOutlet weak var serviceLbl2: UILabel!
     @IBOutlet weak var serviceLbl4: UILabel!
     @IBOutlet weak var serviceLbl3: UILabel!
+    @IBOutlet weak var mapsBtn: UIButton!
     
     var autoshopName = ""
     var autoshopDesc = ""
@@ -72,6 +73,7 @@ class AutoShopDetailVC: UIViewController {
         serviceView3.layer.cornerRadius = 7
         
         bookBtn.layer.cornerRadius = 7
+        mapsBtn.layer.cornerRadius = 7
     }
     
 }
