@@ -41,6 +41,11 @@ class UserBookingVC: UIViewController {
     @IBOutlet weak var btn8: UIButton!
     @IBOutlet weak var btn9: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +55,7 @@ class UserBookingVC: UIViewController {
         motorType = "Honda Vario 150"
         licensePlate = "B 4099 BXC"
         phoneNumber = "08999999999"
-        autoshopName = "AHASS"
+        autoshopName = "Agung Jaya Motor"
         
         calendar.dataSource = self
         calendar.delegate = self
