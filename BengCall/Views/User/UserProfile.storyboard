@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zow-Gc-c5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zow-Gc-c5E">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -88,9 +88,14 @@
                                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="grq-Bz-oSl">
                                             <connections>
                                                 <action selector="cancelButtonPressed:" destination="jiF-5u-hAE" id="dg7-U4-wYy"/>
+                                                <segue destination="gNo-3C-5VM" kind="unwind" unwindAction="unwindCancelEditWithSender:" id="j3h-6F-lUC"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="g7e-8A-6lw"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="g7e-8A-6lw">
+                                            <connections>
+                                                <segue destination="gNo-3C-5VM" kind="unwind" unwindAction="unwindSaveEditUserWithSender:" id="Noc-Rl-4JD"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -107,6 +112,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5b-CW-UKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gNo-3C-5VM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2557" y="-623"/>
         </scene>
@@ -512,12 +518,15 @@
             </objects>
             <point key="canvasLocation" x="1740.5797101449277" y="-31.473214285714285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="lIM-h8-Wai">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gmz-f3-CI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zow-Gc-c5E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" landscapeImage="person.fill" selectedImage="person.fill" id="X1Q-pa-hPR">
+                        <color key="badgeColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MiC-v5-n1O">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -534,6 +543,7 @@
                         <segue destination="yoF-9O-916" kind="relationship" relationship="rootViewController" id="keN-qI-ur5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmz-f3-CI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-623"/>
         </scene>
