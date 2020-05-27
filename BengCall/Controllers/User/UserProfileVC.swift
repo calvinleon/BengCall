@@ -29,7 +29,13 @@ class UserProfileVC: UIViewController {
         logoutButton.layer.shadowOffset = CGSize(width: 0, height: 3)
     }
     
-    @IBAction func unwindSaveEditProfile(sender: UIBarButtonItem){
+    @IBAction func unwindSaveEditUser(sender: UIStoryboardSegue){
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func unwindCancelEditUser(sender: UIStoryboardSegue){
         
         self.dismiss(animated: true, completion: nil)
         
