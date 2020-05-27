@@ -76,6 +76,7 @@
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
 		5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpTableVC.swift; sourceTree = "<group>"; };
 		5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpVC.swift; sourceTree = "<group>"; };
+
 		5AB38F5E247DF587002739F7 /* UserHistoryCurrentBookingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryCurrentBookingTableVC.swift; sourceTree = "<group>"; };
 		5AB38F60247E0906002739F7 /* UserHistoryCurrentBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryCurrentBookingCell.swift; sourceTree = "<group>"; };
 		5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -615,7 +616,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setyawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,7 +636,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setyawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -16,7 +16,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgo-lb-52I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="492"/>
+            <point key="canvasLocation" x="1275" y="523"/>
         </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
@@ -30,14 +30,14 @@
                                 <rect key="frame" x="20" y="90" width="211" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m99-gh-eUP">
                                 <rect key="frame" x="20" y="69" width="95" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-th-koQ">
@@ -605,13 +605,6 @@ Science Group. </string>
                                 <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Service :" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87C-Ld-1oi">
-                                <rect key="frame" x="20" y="569" width="120" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG1-MI-fLE">
                                 <rect key="frame" x="20" y="314" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -735,6 +728,9 @@ Science Group. </string>
                                 <state key="normal" title="Confirm Booking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bookBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="YiT-gG-B36"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-11-PCr">
                                 <rect key="frame" x="346" y="61" width="48" height="30"/>
@@ -815,7 +811,7 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HSC-Qc-f3w"/>
+        <segue reference="P71-fH-LVP"/>
         <segue reference="hkM-UW-IQ0"/>
         <segue reference="5T4-wu-oI1"/>
     </inferredMetricsTieBreakers>
