@@ -96,6 +96,11 @@ class InProgressTableVC: UITableViewController {
         
     }
     
+    @objc func callUser(_ sender: UIButton){
+        guard let number = URL(string: "tel://\(sender.tag)") else { return }
+        UIApplication.shared.open(number)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProgressCell", for: indexPath) as? InProgressCell else { return UITableViewCell() }
         
@@ -105,9 +110,13 @@ class InProgressTableVC: UITableViewController {
         cell.setupInsideCell(bookingData: dataIndex)
         cell.delegate = self
         
-//        if let doneButton = cell.DoneButton {
-//            doneButton.addTarget(self, action: #selector(deleteRows(_:)), for: .touchUpInside)
-//        }
+        if let doneButton = cell.DoneButton {
+            doneButton.addTarget(self, action: #selector(deleteRows(_:)), for: .touchUpInside)
+        }
+        
+        if let callButton = cell.CallButton {
+            callButton.addTarget(self, action: #selector(callUser(_:)), for: .touchUpInside)
+        }
         
         cell.selectionStyle = .none
         

@@ -71,7 +71,7 @@ class InProgressCell: UITableViewCell {
         
         // Creata a tag for the button
         //DoneButton.tag = bookingData.bookingId
-        //CallButton.tag = bookingData.bookingId
+        CallButton.tag = 6281234567899
     }
     
 //    func setupInsideCell(bookingData: BookingModel){
