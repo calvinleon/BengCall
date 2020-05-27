@@ -67,10 +67,30 @@ class UserBookingVC: UIViewController {
     
     @IBAction func bookBtn(_ sender: Any) {
          
-        if isSelected == true{
-            formatTime()
+        if self.isSelected == true{
 
-            helper.saveBooking(customerName: customerName, motorType: motorType, licensePlate: licensePlate, phoneNumber: phoneNumber, datetime: bookingDate, autoshopName: autoshopName)
+        
+        let alert = UIAlertController(title: "Booking", message: "Are you sure want to book?", preferredStyle: .alert)
+
+             let ok = UIAlertAction(title: "Confirm", style: .default, handler: { action in
+                    self.formatTime()
+                    self.helper.saveBooking(customerName: self.customerName, motorType: self.motorType, licensePlate: self.licensePlate, phoneNumber: self.phoneNumber, datetime: self.bookingDate, autoshopName: self.autoshopName)
+                   
+                    self.performSegue(withIdentifier: "userHistorySegue", sender: self)
+
+             })
+                
+             alert.addAction(ok)
+             let cancel = UIAlertAction(title: "Cancel", style: .default, handler: { action in
+             })
+             alert.addAction(cancel)
+             DispatchQueue.main.async(execute: {
+                self.present(alert, animated: true)
+        })
+        } else {
+            let alert = UIAlertController(title: "Booking", message: "Please Choose Date and Time", preferredStyle: .alert)
+            self.present(alert, animated: true)
+
         }
         
     }
