@@ -11,7 +11,7 @@ import UIKit
 class UserHomeVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    @IBOutlet weak var searchView: UIButton!
     
     var tempName = ""
     var tempDesc = ""
@@ -33,6 +33,7 @@ class UserHomeVC: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
 
+        searchView.layer.cornerRadius = 8
     }
     
     func startSegue() {
