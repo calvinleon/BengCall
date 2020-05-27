@@ -18,6 +18,9 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
     var tempName = ""
     var tempDesc = ""
     var tempAddress = ""
+    var tempPhoneNumber = ""
+    var tempCapacity = ""
+    var tempServices = [String]()
     var tempImg = UIImage()
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -62,6 +65,8 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
             destination.autoshopDesc = tempDesc
             destination.autoshopImg = tempImg
             destination.autoshopAdress = tempAddress
+            destination.autoshopPhoneNumber = tempPhoneNumber
+            destination.autoshopService = tempServices
         }
     }
     
@@ -101,6 +106,9 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
             tempDesc = filteredAutoshops.autoShopDesc
             tempImg = filteredAutoshops.autoShopImg
             tempAddress = filteredAutoshops.autoShopAddress
+            tempServices = filteredAutoshops.autoShopServices
+            tempPhoneNumber = filteredAutoshops.autoShopPhoneNumber
+            
             
         } else {
             let autoshops = autoShop[indexPath.row]
@@ -109,6 +117,9 @@ class SearchAutoShopVC: UITableViewController, UISearchResultsUpdating {
             tempDesc = autoshops.autoShopDesc
             tempImg = autoshops.autoShopImg
             tempAddress = autoshops.autoShopAddress
+            tempServices = autoshops.autoShopServices
+            tempPhoneNumber = autoshops.autoShopPhoneNumber
+            
         }
         startSegue()
 

@@ -21,6 +21,10 @@ class AutoshopCollectionVC: UICollectionViewCell {
     @IBOutlet weak var serviceView2: UIView!
     @IBOutlet weak var serviceView3: UIView!
     @IBOutlet weak var bookBtn: UIButton!
+    @IBOutlet weak var autoShopCapacity: UILabel!
+    @IBOutlet weak var serviceLbl1: UILabel!
+    @IBOutlet weak var serviceLbl2: UILabel!
+    @IBOutlet weak var serviceLbl3: UILabel!
     
     
     @IBAction func bookBtn(_ sender: Any) {
@@ -41,7 +45,10 @@ class AutoshopCollectionVC: UICollectionViewCell {
             autoShopImgView.image = autoShop.autoShopImg
             autoShopNameLbl.text = autoShop.autoShopName
             autoShopAddressLbl.text = autoShop.autoShopAddress
-            
+            autoShopCapacity.text = autoShop.autoShopCapatiy
+            serviceLbl1.text = autoShop.autoShopServices[0]
+            serviceLbl2.text = autoShop.autoShopServices[1]
+            serviceLbl3.text = autoShop.autoShopServices[2]
         } 
     }
     
