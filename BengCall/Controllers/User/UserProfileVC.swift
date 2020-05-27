@@ -9,22 +9,31 @@
 import UIKit
 
 class UserProfileVC: UIViewController {
-
+    
+    
+    @IBOutlet weak var logoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupView(){
+        logoutButton.layer.masksToBounds = false
+        logoutButton.layer.cornerRadius = 8
+        logoutButton.layer.shadowColor = UIColor.darkGray.cgColor
+        logoutButton.layer.shadowRadius = 3
+        logoutButton.layer.shadowOpacity = 0.5
+        logoutButton.layer.shadowOffset = CGSize(width: 0, height: 3)
     }
-    */
-
+    
+    @IBAction func unwindSaveEditProfile(sender: UIBarButtonItem){
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
 }
