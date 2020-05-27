@@ -25,7 +25,7 @@ class AutoshopCollectionVC: UICollectionViewCell {
     @IBOutlet weak var serviceLbl1: UILabel!
     @IBOutlet weak var serviceLbl2: UILabel!
     @IBOutlet weak var serviceLbl3: UILabel!
-    
+    @IBOutlet weak var distanceLbl: UILabel!
     
     @IBAction func bookBtn(_ sender: Any) {
         
@@ -49,6 +49,9 @@ class AutoshopCollectionVC: UICollectionViewCell {
             serviceLbl1.text = autoShop.autoShopServices[0]
             serviceLbl2.text = autoShop.autoShopServices[1]
             serviceLbl3.text = autoShop.autoShopServices[2]
+            
+            distanceLbl.text = autoShop.distance
+
         } 
     }
     
