@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -69,9 +69,9 @@
 		5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		5A7C73EE2463FC29009ABFC3 /* UserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBookingVC.swift; sourceTree = "<group>"; };
-		5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA25D0A247CC4AD003D07E7 /* UserSignUpTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpTableVC.swift; sourceTree = "<group>"; };
 		5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpVC.swift; sourceTree = "<group>"; };
+		5D3EB46ADE8C8D4898077654 /* Pods_BengCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BengCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832FC59924741C6100B5AEF7 /* InProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTableVC.swift; sourceTree = "<group>"; };
 		832FC59B24742B9900B5AEF7 /* InProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressCell.swift; sourceTree = "<group>"; };
 		8330E3D3247959FF00C9A4A5 /* OwnerLoginTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerLoginTableVC.swift; sourceTree = "<group>"; };
@@ -130,7 +130,6 @@
 				360892B3FCCE4A19D93D7590 /* Pods-BengCall.debug.xcconfig */,
 				4F98F8120DEBA795704BBE22 /* Pods-BengCall.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -596,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setyawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,7 +615,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setyawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
