@@ -18,6 +18,16 @@
             </objects>
             <point key="canvasLocation" x="1275" y="523"/>
         </scene>
+        <!--UserHistory-->
+        <scene sceneID="oPS-XP-MyA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserHistory" id="I3c-ue-LEy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hYl-Sp-4oz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0S-Uu-nJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="1264"/>
+        </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
             <objects>
@@ -730,6 +740,7 @@ Science Group. </string>
                                 </state>
                                 <connections>
                                     <action selector="bookBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="YiT-gG-B36"/>
+                                    <segue destination="I3c-ue-LEy" kind="show" id="uC7-oR-b1f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-11-PCr">
@@ -739,7 +750,7 @@ Science Group. </string>
                                     <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iE4-SL-W8U" kind="show" id="5T4-wu-oI1"/>
+                                    <segue destination="raO-Fz-iLe" kind="show" id="hBx-ve-lHV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -767,7 +778,7 @@ Science Group. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcp-hR-LqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="1029"/>
+            <point key="canvasLocation" x="-586" y="1045"/>
         </scene>
         <!--Profile-->
         <scene sceneID="cQ0-NG-qqG">
@@ -789,6 +800,7 @@ Science Group. </string>
         <scene sceneID="btw-EE-cry">
             <objects>
                 <tabBarController id="raO-Fz-iLe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="azO-a4-0c8"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k4W-z5-vFG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -827,9 +839,8 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="P71-fH-LVP"/>
+        <segue reference="HSC-Qc-f3w"/>
         <segue reference="hkM-UW-IQ0"/>
-        <segue reference="6MY-Ue-kho"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
