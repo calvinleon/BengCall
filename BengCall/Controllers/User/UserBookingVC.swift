@@ -183,7 +183,7 @@ class UserBookingVC: UIViewController {
     func formatTime(){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm"
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+7:00") //Current time zone
         
         guard let date = dateFormatter.date(from: bookingTime) else {
             fatalError()

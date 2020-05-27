@@ -7,11 +7,25 @@
 //
 
 import UIKit
+import CloudKit
 
 class UserHistoryCurrentBookingTableVC: UITableViewController {
     
+    let helper = CloudKitHelper()
+    
+    var currentData = [CKRecord]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        helper.fetchAll(autoshopName: "") { (record) in
+            
+            self.currentData = record
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,19 +38,27 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return currentData.count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "currentBooking", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "currentBooking", for: indexPath) as! UserHistoryCurrentBookingCell
 
-        // Configure the cell...
+        let dataIndex = currentData[indexPath.row]
+        cell.autoshopName.text = dataIndex["autoshopName"]
+//        cell.serviceTime.text = dataIndex["datetime"]
+        cell.motorcycleModel.text = dataIndex["motorType"]
+        cell.licensePlateNo.text = dataIndex["licensePlate"]
+        cell.userPhoneNo.text = dataIndex["phoneNumber"]
+        
+        cell.selectionStyle = .none
 
         return cell
     }
