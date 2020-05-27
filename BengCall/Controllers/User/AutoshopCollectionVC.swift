@@ -56,7 +56,6 @@ class AutoshopCollectionVC: UICollectionViewCell {
         self.layer.cornerRadius = 15.0
         self.layer.borderWidth = 5.0
         self.layer.borderColor = UIColor.clear.cgColor
-        self.layer.masksToBounds = true
         
         self.serviceView1.layer.cornerRadius = 8.0
         self.serviceView2.layer.cornerRadius = 8.0
@@ -68,7 +67,7 @@ class AutoshopCollectionVC: UICollectionViewCell {
         self.contentView.layer.borderColor = UIColor.clear.cgColor
         self.contentView.layer.masksToBounds = true
         self.layer.shadowColor = UIColor.white.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 0.0)
+        self.layer.shadowOffset = CGSize(width: 1, height: 0.0)
         self.layer.shadowRadius = 6.0
         self.layer.shadowOpacity = 0.6
         self.layer.cornerRadius = 15.0
