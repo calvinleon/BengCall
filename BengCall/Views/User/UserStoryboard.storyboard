@@ -16,7 +16,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgo-lb-52I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="492"/>
+            <point key="canvasLocation" x="1275" y="523"/>
         </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
@@ -735,6 +735,9 @@ Science Group. </string>
                                 <state key="normal" title="Confirm Booking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bookBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="YiT-gG-B36"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-11-PCr">
                                 <rect key="frame" x="346" y="61" width="48" height="30"/>

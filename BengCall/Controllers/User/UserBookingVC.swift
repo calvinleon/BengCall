@@ -8,23 +8,28 @@
 
 import UIKit
 import FSCalendar
-
+import CloudKit
 
 class UserBookingVC: UIViewController {
 
     @IBOutlet weak var calendar: FSCalendar!
     var selectedDate = Date()
+    let helper = CloudKitHelper()
     
     var bookingDate = ""
     var bookingTime = ""
     var phoneNumber = ""
     var motorType = ""
-    var motorNumber = ""
-    var name = ""
+    
+    var customerName = ""
+    var licensePlate = ""
+    var autoshopName = ""
     
     var orangeColor = UIColor(red: 0.88, green: 0.40, blue: 0.22, alpha: 1.00)
     var defaultFontColor = UIColor(red: 0.20, green: 0.36, blue: 0.47, alpha: 1.00)
     var defaultColor = UIColor(red: 0.94, green: 0.93, blue: 0.93, alpha: 1.00)
+    
+    let date = Date()
 
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
@@ -41,10 +46,20 @@ class UserBookingVC: UIViewController {
         
         buttonSetup()
         
+        customerName = "Arif Joddy"
+        motorType = "Honda Vario 150"
+        licensePlate = "B 4099 BXC"
+        phoneNumber = "08999999999"
+        autoshopName = "AHASS"
+        
         calendar.dataSource = self
         calendar.delegate = self
         calendar.scope = FSCalendarScope.week
         
+    }
+    @IBAction func bookBtn(_ sender: Any) {
+        
+        helper.saveBooking(customerName: customerName, motorType: motorType, licensePlate: licensePlate, phoneNumber: phoneNumber, datetime: date, autoshopName: autoshopName)
     }
     
     @IBAction func pickTimeBtn(_ sender: UIButton) {
@@ -146,7 +161,6 @@ class UserBookingVC: UIViewController {
 extension UserBookingVC: FSCalendarDataSource, FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        
         
         if let tempDate = calendar.selectedDate{
             selectedDate = tempDate
