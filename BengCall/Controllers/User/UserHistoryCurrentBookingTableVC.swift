@@ -43,7 +43,7 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return currentData.count
+        return currentData.count 
     }
 
 
