@@ -16,36 +16,28 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgo-lb-52I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="524"/>
+            <point key="canvasLocation" x="1275" y="523"/>
         </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
             <objects>
                 <viewController title="Home" id="iE4-SL-W8U" customClass="UserHomeVC" customModule="BengCall" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGH-Mc-Anv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSD City, Tangerang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eZ-P7-e3a">
-                                <rect key="frame" x="20" y="90" width="159" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kebon Jeruk, Jakarta Barat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eZ-P7-e3a">
+                                <rect key="frame" x="20" y="90" width="211" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA7-Z1-buL">
-                                <rect key="frame" x="364" y="72" width="38" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="map" catalog="system"/>
-                                <connections>
-                                    <segue destination="zJD-Ac-Py0" kind="push" id="bVN-vw-rqb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m99-gh-eUP">
                                 <rect key="frame" x="20" y="69" width="95" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-th-koQ">
@@ -82,6 +74,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="bookBtn:" destination="EPn-bW-Kaw" eventType="touchUpInside" id="jhl-23-xVy"/>
+                                                        <segue destination="iZo-Of-AAp" kind="show" id="P71-fH-LVP"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="~ 2.0 Km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-t5-7RY">
@@ -165,7 +158,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 Mechanics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn7-5E-R9g">
-                                                    <rect key="frame" x="11" y="283" width="104" height="21"/>
+                                                    <rect key="frame" x="11" y="283" width="202" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -226,15 +219,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA7-Z1-buL">
+                                <rect key="frame" x="369" y="72" width="25" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="map" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zJD-Ac-Py0" kind="push" id="bVN-vw-rqb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="67V-ZE-xpW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="vyl-NK-hXD"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="vyl-NK-hXD"/>
                     <navigationItem key="navigationItem" id="K0X-ic-S9S"/>
                     <connections>
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
-                        <segue destination="iZo-Of-AAp" kind="show" id="w6j-vh-XMa"/>
+                        <outlet property="searchView" destination="1Vs-ez-Ab9" id="cVa-uq-93H"/>
                         <segue destination="WUQ-U5-aFp" kind="show" identifier="autoshopDetailSegue" id="hkM-UW-IQ0"/>
                     </connections>
                 </viewController>
@@ -423,7 +427,7 @@ Science Group. </string>
                                                             <constraint firstAttribute="height" constant="25" id="Jtp-b8-qk3"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-Ql-INT">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maps" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-Ql-INT">
                                                         <rect key="frame" x="13" y="295" width="387" height="165"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="165" id="CAH-kz-458"/>
@@ -438,6 +442,16 @@ Science Group. </string>
                                                         <state key="normal" image="phone.fill" catalog="system">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="callAutoShop:" destination="WUQ-U5-aFp" eventType="touchUpInside" id="2Yc-GX-vfJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIu-gj-k2s">
+                                                        <rect key="frame" x="22" y="420" width="369" height="30"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Open in Maps">
+                                                            <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,6 +459,7 @@ Science Group. </string>
                                                     <constraint firstItem="4sZ-Ql-INT" firstAttribute="top" secondItem="R58-fi-Yhl" secondAttribute="bottom" constant="36" id="0ba-mM-JVg"/>
                                                     <constraint firstItem="R58-fi-Yhl" firstAttribute="top" secondItem="fuy-ue-hCK" secondAttribute="bottom" constant="7.5" id="0fC-8p-qvP"/>
                                                     <constraint firstItem="GFV-cs-Xmn" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="36s-BR-ReE"/>
+                                                    <constraint firstItem="oIu-gj-k2s" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="22" id="4KZ-iU-WCw"/>
                                                     <constraint firstItem="NMk-zF-yLY" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="4zI-Bj-85A"/>
                                                     <constraint firstItem="e3Z-IR-fey" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="7Q6-so-tXK"/>
                                                     <constraint firstItem="HQw-NI-awd" firstAttribute="top" secondItem="ZGq-Uw-uBL" secondAttribute="top" constant="24" id="7hn-sW-4ol"/>
@@ -454,8 +469,10 @@ Science Group. </string>
                                                     <constraint firstItem="4sZ-Ql-INT" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="Aj2-R4-gwf"/>
                                                     <constraint firstItem="UG1-rE-wyj" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="B8S-Ru-Gok"/>
                                                     <constraint firstAttribute="trailing" secondItem="GFV-cs-Xmn" secondAttribute="trailing" constant="82.5" id="CLY-Cm-xah"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oIu-gj-k2s" secondAttribute="trailing" constant="23" id="OsP-b8-vnu"/>
                                                     <constraint firstItem="fuy-ue-hCK" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="SDX-pi-hg0"/>
                                                     <constraint firstItem="UG1-rE-wyj" firstAttribute="top" secondItem="ZGq-Uw-uBL" secondAttribute="top" constant="19" id="Uez-5E-Lw8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oIu-gj-k2s" secondAttribute="bottom" constant="38" id="Ynp-hE-HDn"/>
                                                     <constraint firstItem="GFV-cs-Xmn" firstAttribute="top" secondItem="UG1-rE-wyj" secondAttribute="bottom" constant="4" id="aCh-tB-4Ry"/>
                                                     <constraint firstAttribute="trailing" secondItem="4sZ-Ql-INT" secondAttribute="trailing" constant="14" id="aFR-x2-Vdg"/>
                                                     <constraint firstItem="p2g-YS-3wW" firstAttribute="leading" secondItem="ZGq-Uw-uBL" secondAttribute="leading" constant="13" id="cfy-o7-MSa"/>
@@ -470,7 +487,7 @@ Science Group. </string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGs-yY-3Ct">
-                                        <rect key="frame" x="14" y="751" width="387" height="50"/>
+                                        <rect key="frame" x="14" y="738" width="387" height="50"/>
                                         <color key="backgroundColor" red="0.19607843137254902" green="0.36470588235294116" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="w6z-CR-VXu"/>
@@ -479,6 +496,9 @@ Science Group. </string>
                                         <state key="normal" title="Book">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="iZo-Of-AAp" kind="show" id="HSC-Qc-f3w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -515,13 +535,13 @@ Science Group. </string>
                         <outlet property="descLbl" destination="e3Z-IR-fey" id="rAH-eZ-vgu"/>
                         <outlet property="detailView" destination="ZGq-Uw-uBL" id="sE9-jo-Nr8"/>
                         <outlet property="imageView" destination="1ge-Ig-nsT" id="vZQ-IA-Sct"/>
+                        <outlet property="mapsBtn" destination="oIu-gj-k2s" id="gLV-5A-gqD"/>
                         <outlet property="serviceLbl1" destination="nhI-ec-Nat" id="taE-cx-n1F"/>
                         <outlet property="serviceLbl2" destination="LVe-pN-sgN" id="Xjt-5j-Hvq"/>
                         <outlet property="serviceLbl3" destination="Kam-q9-SsZ" id="pWZ-fb-7Nn"/>
                         <outlet property="serviceView1" destination="tQJ-5M-LKw" id="0VK-5r-VH2"/>
                         <outlet property="serviceView2" destination="iEV-Ap-y1h" id="kLb-p1-Faq"/>
                         <outlet property="serviceView3" destination="Neg-Hu-5qq" id="2qO-il-wgS"/>
-                        <segue destination="iZo-Of-AAp" kind="show" id="XIY-WO-rL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBk-g1-TE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -537,14 +557,14 @@ Science Group. </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Date &amp; Time" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-4R-19k">
-                                <rect key="frame" x="20" y="58" width="321" height="41"/>
+                                <rect key="frame" x="20" y="58" width="284" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54x-td-cyt" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="119" width="374" height="336"/>
+                                <rect key="frame" x="20" y="130" width="374" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4w-1E-Btl">
@@ -578,18 +598,176 @@ Science Group. </string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Morning" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuC-Mp-cyI">
+                                <rect key="frame" x="25" y="284" width="60" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG1-MI-fLE">
+                                <rect key="frame" x="20" y="314" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="8:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="msH-4n-2GA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-nb-RuW">
+                                <rect key="frame" x="20" y="362" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="9:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="son-4a-vSt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSV-7S-waM">
+                                <rect key="frame" x="20" y="410" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="10:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="sfO-aw-Vrz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Afternoon" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDf-3u-eBv">
+                                <rect key="frame" x="171" y="284" width="72" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Da-gk-nKm">
+                                <rect key="frame" x="172" y="314" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="11:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="cQg-9X-Gdb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-sH-kbz">
+                                <rect key="frame" x="172" y="362" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="13:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="Pfd-zz-SBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM0-Vb-o43">
+                                <rect key="frame" x="172" y="410" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="14:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="rCe-T1-k0k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evening" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQt-hC-R1U">
+                                <rect key="frame" x="331" y="284" width="57" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykx-mP-Byh">
+                                <rect key="frame" x="324" y="314" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="16:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="m5a-2b-deh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-67-vFt">
+                                <rect key="frame" x="324" y="362" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="17:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="Isn-qt-0vu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDo-kg-H6q">
+                                <rect key="frame" x="172" y="458" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="15:00">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickTimeBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="gtz-yz-Iqh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luU-HH-v2E">
+                                <rect key="frame" x="20" y="738" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JkR-pz-uOX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Confirm Booking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookBtn:" destination="iZo-Of-AAp" eventType="touchUpInside" id="YiT-gG-B36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-11-PCr">
+                                <rect key="frame" x="346" y="61" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iE4-SL-W8U" kind="show" id="5T4-wu-oI1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="luU-HH-v2E" firstAttribute="leading" secondItem="5Ly-Iu-niN" secondAttribute="leading" constant="20" id="8AK-h3-HTA"/>
+                            <constraint firstItem="5Ly-Iu-niN" firstAttribute="bottom" secondItem="luU-HH-v2E" secondAttribute="bottom" constant="20" id="8uJ-JW-weF"/>
+                            <constraint firstItem="5Ly-Iu-niN" firstAttribute="trailing" secondItem="luU-HH-v2E" secondAttribute="trailing" constant="20" id="xvY-tC-OSY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Ly-Iu-niN"/>
                     </view>
                     <navigationItem key="navigationItem" id="fr4-wl-1a0"/>
                     <connections>
+                        <outlet property="btn1" destination="xG1-MI-fLE" id="qu0-Ud-uDU"/>
+                        <outlet property="btn2" destination="Zg9-nb-RuW" id="LJg-Xa-3QL"/>
+                        <outlet property="btn3" destination="pSV-7S-waM" id="AXP-q0-pw6"/>
+                        <outlet property="btn4" destination="0Da-gk-nKm" id="0EP-K0-iUx"/>
+                        <outlet property="btn5" destination="SZM-sH-kbz" id="jdG-Ik-Wbm"/>
+                        <outlet property="btn6" destination="XM0-Vb-o43" id="w9h-P3-0HB"/>
+                        <outlet property="btn7" destination="CDo-kg-H6q" id="BL6-AP-iR7"/>
+                        <outlet property="btn8" destination="Ykx-mP-Byh" id="TR2-Hn-UcT"/>
+                        <outlet property="btn9" destination="CXt-67-vFt" id="VCt-3r-2QO"/>
                         <outlet property="calendar" destination="54x-td-cyt" id="s5B-ev-FvZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcp-hR-LqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5072463768117" y="1146.4285714285713"/>
+            <point key="canvasLocation" x="174" y="1029"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="btw-EE-cry">
@@ -599,6 +777,7 @@ Science Group. </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="iE4-SL-W8U" kind="relationship" relationship="viewControllers" id="6MY-Ue-kho"/>
@@ -608,7 +787,7 @@ Science Group. </string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1c6-VZ-OTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="105"/>
+            <point key="canvasLocation" x="175" y="105"/>
         </scene>
         <!--UserHistory-->
         <scene sceneID="6T0-OF-gKb">
@@ -632,15 +811,16 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XIY-WO-rL6"/>
+        <segue reference="P71-fH-LVP"/>
         <segue reference="hkM-UW-IQ0"/>
+        <segue reference="5T4-wu-oI1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="113"/>
-        <image name="map" width="343" height="149"/>
+        <image name="maps" width="2312" height="858"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>

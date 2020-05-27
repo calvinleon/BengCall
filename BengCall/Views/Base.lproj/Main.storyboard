@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="4073.188405797102" y="-413.16964285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="9Fg-4x-0PN">
             <objects>
-                <viewController id="0rb-LI-6Xd" sceneMemberID="viewController">
+                <viewController id="0rb-LI-6Xd" customClass="MainVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1pc-ko-3tU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1992.753623188406" y="-569.19642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="RgM-Q8-p4o">
             <objects>
-                <viewController id="1Vz-dh-Aaz" sceneMemberID="viewController">
+                <viewController id="1Vz-dh-Aaz" customClass="MainVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eMW-Md-Lsh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="2742.0289855072465" y="-569.19642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="kPR-q4-C76">
             <objects>
-                <viewController id="9IX-WY-a1X" sceneMemberID="viewController">
+                <viewController id="9IX-WY-a1X" customClass="MainVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTL-QV-NKl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +206,10 @@
                         <viewLayoutGuide key="safeArea" id="h5i-pm-bMm"/>
                     </view>
                     <navigationItem key="navigationItem" id="1sg-yJ-3H2"/>
+                    <connections>
+                        <outlet property="ownerBtn" destination="Gre-Jx-33v" id="sts-mE-hR0"/>
+                        <outlet property="userBtn" destination="jnR-gE-od0" id="GZm-5H-ZRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nx-fH-4ey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
