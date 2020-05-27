@@ -20,6 +20,8 @@ class UserHomeVC: UIViewController {
     var tempImg = UIImage()
     var tempPhoneNumber = ""
     
+    var tempDistance = ""
+    
     var autoShops = AutoShop.fetchAutoShop()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +51,7 @@ class UserHomeVC: UIViewController {
             destination.autoshopDesc = tempDesc
             destination.autoshopService = tempService
             destination.autoshopPhoneNumber = tempPhoneNumber
+            destination.distance = tempDistance
             
         }
     }
@@ -104,6 +107,7 @@ extension UserHomeVC: UIScrollViewDelegate, UICollectionViewDelegate {
             tempDesc = autoshop.autoShopDesc
             tempService = autoshop.autoShopServices
             tempPhoneNumber = autoshop.autoShopPhoneNumber
+            tempDistance = autoshop.distance
             
             startSegue()
             

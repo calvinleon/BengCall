@@ -191,6 +191,7 @@
                                             <outlet property="autoShopImgView" destination="JNN-Ij-c1n" id="iN2-l6-SfM"/>
                                             <outlet property="autoShopNameLbl" destination="d3W-57-OEo" id="OHJ-p9-2dg"/>
                                             <outlet property="bookBtn" destination="kNN-1j-q9B" id="oNv-0U-eYg"/>
+                                            <outlet property="distanceLbl" destination="i1G-t5-7RY" id="BGj-0i-nth"/>
                                             <outlet property="serviceLbl1" destination="CWa-yf-DCF" id="xPi-Gv-iaj"/>
                                             <outlet property="serviceLbl2" destination="8Pu-FW-ldr" id="Irt-zY-ctF"/>
                                             <outlet property="serviceLbl3" destination="p8d-jG-5dD" id="2VA-Z0-1o7"/>
@@ -544,6 +545,7 @@ Science Group. </string>
                         <outlet property="bookBtn" destination="GGs-yY-3Ct" id="Ab8-p2-JIW"/>
                         <outlet property="descLbl" destination="e3Z-IR-fey" id="rAH-eZ-vgu"/>
                         <outlet property="detailView" destination="ZGq-Uw-uBL" id="sE9-jo-Nr8"/>
+                        <outlet property="distanceLbl" destination="p2g-YS-3wW" id="Tld-V7-ytK"/>
                         <outlet property="imageView" destination="1ge-Ig-nsT" id="vZQ-IA-Sct"/>
                         <outlet property="mapsBtn" destination="oIu-gj-k2s" id="gLV-5A-gqD"/>
                         <outlet property="serviceLbl1" destination="nhI-ec-Nat" id="taE-cx-n1F"/>

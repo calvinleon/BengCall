@@ -26,6 +26,7 @@ class AutoShopDetailVC: UIViewController {
     @IBOutlet weak var serviceLbl4: UILabel!
     @IBOutlet weak var serviceLbl3: UILabel!
     @IBOutlet weak var mapsBtn: UIButton!
+    @IBOutlet weak var distanceLbl: UILabel!
     
     var autoshopName = ""
     var autoshopDesc = ""
@@ -34,6 +35,8 @@ class AutoShopDetailVC: UIViewController {
     var autoshopService = [String]()
     var autoshopPhoneNumber = ""
     
+    var distance = ""
+
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
