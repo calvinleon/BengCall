@@ -23,7 +23,7 @@
             <objects>
                 <viewController title="Home" id="iE4-SL-W8U" customClass="UserHomeVC" customModule="BengCall" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGH-Mc-Anv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kebon Jeruk, Jakarta Barat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eZ-P7-e3a">
@@ -770,6 +770,7 @@ Science Group. </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="iE4-SL-W8U" kind="relationship" relationship="viewControllers" id="6MY-Ue-kho"/>
@@ -805,7 +806,7 @@ Science Group. </string>
     <inferredMetricsTieBreakers>
         <segue reference="P71-fH-LVP"/>
         <segue reference="hkM-UW-IQ0"/>
-        <segue reference="5T4-wu-oI1"/>
+        <segue reference="6MY-Ue-kho"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bengkel" width="330" height="195"/>
