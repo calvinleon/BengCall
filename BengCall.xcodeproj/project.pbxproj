@@ -53,6 +53,7 @@
 		D743F3B82462761F00752C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B72462761F00752C64 /* Assets.xcassets */; };
 		D743F3BB2462761F00752C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D743F3B92462761F00752C64 /* LaunchScreen.storyboard */; };
 		D743F3DF24627BBD00752C64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D743F3DE24627BBD00752C64 /* .gitignore */; };
+		D757F024247EA8960065DBBE /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D757F023247EA8960065DBBE /* OnboardingVC.swift */; };
 		D775BC9F24640027001C38A9 /* UserHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BC9E24640027001C38A9 /* UserHomeVC.swift */; };
 		D775BCA124642AC1001C38A9 /* AutoshopCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */; };
 		D7878A462464EB57000CF72C /* SearchAutoShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */; };
@@ -115,6 +116,7 @@
 		D743F3D02462761F00752C64 /* BengCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BengCallUITests.swift; sourceTree = "<group>"; };
 		D743F3D22462761F00752C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D743F3DE24627BBD00752C64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D757F023247EA8960065DBBE /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		D775BC9E24640027001C38A9 /* UserHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeVC.swift; sourceTree = "<group>"; };
 		D775BCA024642AC1001C38A9 /* AutoshopCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoshopCollectionVC.swift; sourceTree = "<group>"; };
 		D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAutoShopVC.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				D7878A452464EB57000CF72C /* SearchAutoShopVC.swift */,
 				5A7C73EA2463FB30009ABFC3 /* UserProfileVC.swift */,
+				D757F023247EA8960065DBBE /* OnboardingVC.swift */,
 				839BB72D247D2DC900DB9AF9 /* UserEditProfileVC.swift */,
 				839BB72F247D2DE500DB9AF9 /* UserEditProfileTableVC.swift */,
 				839BB72B247D2D3A00DB9AF9 /* UserProfileTableVC.swift */,
@@ -437,6 +440,7 @@
 				D743F3B02462761F00752C64 /* MainVC.swift in Sources */,
 				D743F3B62462761F00752C64 /* BengCall.xcdatamodeld in Sources */,
 				D7878A462464EB57000CF72C /* SearchAutoShopVC.swift in Sources */,
+				D757F024247EA8960065DBBE /* OnboardingVC.swift in Sources */,
 				D743F3AC2462761F00752C64 /* AppDelegate.swift in Sources */,
 				D743F3AE2462761F00752C64 /* SceneDelegate.swift in Sources */,
 				832FC59A24741C6100B5AEF7 /* InProgressTableVC.swift in Sources */,

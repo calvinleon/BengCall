@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1992.753623188406" y="-569.19642857142856"/>
         </scene>
-        <!--MainVC-->
+        <!--View Controller-->
         <scene sceneID="RgM-Q8-p4o">
             <objects>
-                <viewController id="1Vz-dh-Aaz" customClass="MainVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Vz-dh-Aaz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eMW-Md-Lsh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="2742.0289855072465" y="-569.19642857142856"/>
         </scene>
-        <!--MainVC-->
+        <!--OnboardingVC-->
         <scene sceneID="kPR-q4-C76">
             <objects>
-                <viewController id="9IX-WY-a1X" customClass="MainVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9IX-WY-a1X" customClass="OnboardingVC" customModule="BengCall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTL-QV-NKl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,8 +207,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="1sg-yJ-3H2"/>
                     <connections>
-                        <outlet property="ownerBtn" destination="Gre-Jx-33v" id="sts-mE-hR0"/>
-                        <outlet property="userBtn" destination="jnR-gE-od0" id="GZm-5H-ZRO"/>
+                        <outlet property="ownerBtn" destination="Gre-Jx-33v" id="0yh-qN-cQC"/>
+                        <outlet property="userBtn" destination="jnR-gE-od0" id="PmH-hw-CEX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nx-fH-4ey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
