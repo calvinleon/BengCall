@@ -14,6 +14,7 @@ class UserBookingVC: UIViewController {
 
     @IBOutlet weak var calendar: FSCalendar!
     var selectedDate = Date()
+    @IBOutlet weak var bookingBtn: UIButton!
     let helper = CloudKitHelper()
     
     var bookingDate = Date()
@@ -61,8 +62,9 @@ class UserBookingVC: UIViewController {
         calendar.delegate = self
         calendar.scope = FSCalendarScope.week
         
-        
+        bookingBtn.layer.cornerRadius = 8
     }
+    
     @IBAction func bookBtn(_ sender: Any) {
          
         if isSelected == true{
