@@ -54,7 +54,7 @@ class UserBookingVC: UIViewController {
         
         buttonSetup()
         
-        customerName = "Arif Joddy"
+        customerName = "James"
         motorType = "Honda Vario 150"
         licensePlate = "B 4099 BXC"
         phoneNumber = "08999999999"
