@@ -11,7 +11,7 @@ import FSCalendar
 import CloudKit
 
 class UserBookingVC: UIViewController {
-
+    
     @IBOutlet weak var calendar: FSCalendar!
     var selectedDate = Date()
     @IBOutlet weak var bookingBtn: UIButton!
@@ -47,7 +47,7 @@ class UserBookingVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-
+        
     }
     
     override func viewDidLoad() {
@@ -76,30 +76,38 @@ class UserBookingVC: UIViewController {
     
     @objc func myviewTapped(_ sender: UITapGestureRecognizer) {
         self.mainView.endEditing(true)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        
+        view.addGestureRecognizer(tapGesture)
     }
     
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    
     @IBAction func bookBtn(_ sender: Any) {
-         
-        if self.isSelected == true{
-
         
-        let alert = UIAlertController(title: "Booking", message: "Are you sure want to book?", preferredStyle: .alert)
-
-             let ok = UIAlertAction(title: "Confirm", style: .default, handler: { action in
-                    self.formatTime()
-                    self.helper.saveBooking(customerName: self.customerName, motorType: self.motorType, licensePlate: self.licensePlate, phoneNumber: self.phoneNumber, datetime: self.bookingDate, autoshopName: self.autoshopName)
-                   
-                    self.performSegue(withIdentifier: "userHistorySegue", sender: self)
-
-             })
+        if self.isSelected == true{
+            
+            
+            let alert = UIAlertController(title: "Booking", message: "Are you sure want to book?", preferredStyle: .alert)
+            
+            let ok = UIAlertAction(title: "Confirm", style: .default, handler: { action in
+                self.formatTime()
+                self.helper.saveBooking(customerName: self.customerName, motorType: self.motorType, licensePlate: self.licensePlate, phoneNumber: self.phoneNumber, datetime: self.bookingDate, autoshopName: self.autoshopName)
                 
-             alert.addAction(ok)
-             let cancel = UIAlertAction(title: "Cancel", style: .default, handler: { action in
-             })
-             alert.addAction(cancel)
-             DispatchQueue.main.async(execute: {
+                self.performSegue(withIdentifier: "userHistorySegue", sender: self)
+                
+            })
+            
+            alert.addAction(ok)
+            let cancel = UIAlertAction(title: "Cancel", style: .default, handler: { action in
+            })
+            alert.addAction(cancel)
+            DispatchQueue.main.async(execute: {
                 self.present(alert, animated: true)
-        })
+            })
         } else {
             let alert = UIAlertController(title: "Booking", message: "Please Choose Date and Time", preferredStyle: .alert)
             self.present(alert, animated: true)
@@ -124,56 +132,56 @@ class UserBookingVC: UIViewController {
             btn2.backgroundColor = orangeColor
             btn2.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn3:
             bookingTime = "10:00"
             buttonInvalid()
             btn3.backgroundColor = orangeColor
             btn3.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn4:
             bookingTime = "11:00"
             buttonInvalid()
             btn4.backgroundColor = orangeColor
             btn4.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn5:
             bookingTime = "13:00"
             buttonInvalid()
             btn5.backgroundColor = orangeColor
             btn5.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn6:
             bookingTime = "14:00"
             buttonInvalid()
             btn6.backgroundColor = orangeColor
             btn6.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn7:
             bookingTime = "15:00"
             buttonInvalid()
             btn7.backgroundColor = orangeColor
             btn7.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn8:
             bookingTime = "16:00"
             buttonInvalid()
             btn8.backgroundColor = orangeColor
             btn8.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         case btn9:
             bookingTime = "17:00"
             buttonInvalid()
             btn9.backgroundColor = orangeColor
             btn9.setTitleColor(UIColor.white, for: UIControl.State.normal)
             isSelected = true
-
+            
         default:
             bookingTime = ""
         }
@@ -214,7 +222,7 @@ class UserBookingVC: UIViewController {
         btn7.layer.cornerRadius = 8
         btn8.layer.cornerRadius = 8
         btn9.layer.cornerRadius = 8
-
+        
     }
     
     func formatTime(){
@@ -241,8 +249,8 @@ extension UserBookingVC: FSCalendarDataSource, FSCalendarDelegate {
         
         let formatter = DateFormatter()
         formatter.dateStyle = .short
-//        bookingDate = formatter.string(from: selectedDate)
-
+        //        bookingDate = formatter.string(from: selectedDate)
+        
     }
     
 }
