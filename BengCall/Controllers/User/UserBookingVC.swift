@@ -65,9 +65,6 @@ class UserBookingVC: UIViewController {
         calendar.scope = FSCalendarScope.week
         
         bookingBtn.layer.cornerRadius = 8
-<<<<<<< HEAD
-                
-=======
         
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(UserBookingVC.myviewTapped(_:)))
         
