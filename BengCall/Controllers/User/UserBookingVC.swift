@@ -18,7 +18,6 @@ class UserBookingVC: UIViewController {
     let helper = CloudKitHelper()
     
     @IBOutlet var mainView: UIView!
-    var tapGesture = UIGestureRecognizer()
     
     var bookingDate = Date()
     var bookingTime = ""
@@ -83,6 +82,7 @@ class UserBookingVC: UIViewController {
     
     @objc func hideKeyboard() {
         self.view.endEditing(true)
+>>>>>>> c1f605d3e988a213a8d9d0a1cf439c4eba6ea49f
     }
     
     
@@ -252,6 +252,4 @@ extension UserBookingVC: FSCalendarDataSource, FSCalendarDelegate {
         //        bookingDate = formatter.string(from: selectedDate)
         
     }
-    
 }
-

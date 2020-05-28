@@ -754,7 +754,7 @@ Science Group. </string>
                                     <segue destination="raO-Fz-iLe" kind="show" id="hBx-ve-lHV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Write type of service here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftR-5m-oe8">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write type of service here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftR-5m-oe8">
                                 <rect key="frame" x="171" y="591" width="217" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -624,7 +624,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BengCall/BengCall.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8L4FPJX7XJ;
 				INFOPLIST_FILE = BengCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -633,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Calvin Bengcall";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,7 +646,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BengCall/BengCall.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8L4FPJX7XJ;
 				INFOPLIST_FILE = BengCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -653,6 +656,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.setiawanjoddy.BengCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Calvin Bengcall";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
