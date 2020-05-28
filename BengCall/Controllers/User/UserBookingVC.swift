@@ -66,9 +66,6 @@ class UserBookingVC: UIViewController {
         
         bookingBtn.layer.cornerRadius = 8
         
-        tapGesture = UITapGestureRecognizer(target: self, action: #selector(UserBookingVC.myviewTapped(_:)))
-        
-        mainView.addGestureRecognizer(tapGesture)
         mainView.isUserInteractionEnabled = true
         
     }
@@ -82,7 +79,6 @@ class UserBookingVC: UIViewController {
     
     @objc func hideKeyboard() {
         self.view.endEditing(true)
->>>>>>> c1f605d3e988a213a8d9d0a1cf439c4eba6ea49f
     }
     
     
@@ -253,3 +249,4 @@ extension UserBookingVC: FSCalendarDataSource, FSCalendarDelegate {
         
     }
 }
+
