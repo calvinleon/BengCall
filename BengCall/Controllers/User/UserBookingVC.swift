@@ -18,7 +18,6 @@ class UserBookingVC: UIViewController {
     let helper = CloudKitHelper()
     
     @IBOutlet var mainView: UIView!
-    var tapGesture = UIGestureRecognizer()
     
     var bookingDate = Date()
     var bookingTime = ""
@@ -66,16 +65,7 @@ class UserBookingVC: UIViewController {
         calendar.scope = FSCalendarScope.week
         
         bookingBtn.layer.cornerRadius = 8
-        
-        tapGesture = UITapGestureRecognizer(target: self, action: #selector(UserBookingVC.myviewTapped(_:)))
-        
-        mainView.addGestureRecognizer(tapGesture)
-        mainView.isUserInteractionEnabled = true
-        
-    }
-    
-    @objc func myviewTapped(_ sender: UITapGestureRecognizer) {
-        self.mainView.endEditing(true)
+                
     }
     
     @IBAction func bookBtn(_ sender: Any) {
@@ -244,6 +234,4 @@ extension UserBookingVC: FSCalendarDataSource, FSCalendarDelegate {
 //        bookingDate = formatter.string(from: selectedDate)
 
     }
-    
 }
-
