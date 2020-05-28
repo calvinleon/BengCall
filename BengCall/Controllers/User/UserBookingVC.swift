@@ -17,6 +17,9 @@ class UserBookingVC: UIViewController {
     @IBOutlet weak var bookingBtn: UIButton!
     let helper = CloudKitHelper()
     
+    @IBOutlet var mainView: UIView!
+    var tapGesture = UIGestureRecognizer()
+    
     var bookingDate = Date()
     var bookingTime = ""
     var phoneNumber = ""
@@ -64,6 +67,15 @@ class UserBookingVC: UIViewController {
         
         bookingBtn.layer.cornerRadius = 8
         
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(UserBookingVC.myviewTapped(_:)))
+        
+        mainView.addGestureRecognizer(tapGesture)
+        mainView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func myviewTapped(_ sender: UITapGestureRecognizer) {
+        self.mainView.endEditing(true)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         
         view.addGestureRecognizer(tapGesture)
