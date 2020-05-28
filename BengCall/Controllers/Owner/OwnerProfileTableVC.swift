@@ -18,16 +18,24 @@ class OwnerProfileTableVC: UITableViewController {
     @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var capacityLabel: UILabel!
     
+    @IBOutlet weak var ownerLogOut: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        setupButton()
         
         self.autoshopImageView.layer.cornerRadius = 10
         self.tableView.tableFooterView = UIView()
+    }
+    
+    func setupButton(){
+        ownerLogOut.layer.masksToBounds = false
+        ownerLogOut.layer.cornerRadius = 8
+        ownerLogOut.layer.shadowColor = UIColor.darkGray.cgColor
+        ownerLogOut.layer.shadowRadius = 3
+        ownerLogOut.layer.shadowOpacity = 0.5
+        ownerLogOut.layer.shadowOffset = CGSize(width: 0, height: 3)
     }
 
     // MARK: - Table view data source
@@ -39,7 +47,7 @@ class OwnerProfileTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 8
     }
 
     /*

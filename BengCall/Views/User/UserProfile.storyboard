@@ -46,9 +46,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e4z-CZ-160"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="nvd-Vi-Tou">
-                        <color key="badgeColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Profile" id="qo9-t2-p3K">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="fu5-hC-76X">
                             <color key="tintColor" red="0.1960784314" green="0.36470588240000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

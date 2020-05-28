@@ -15,8 +15,15 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
     
     var currentData = [CKRecord]()
     
+    var selectedCellIndexPath: IndexPath?
+    let selectedCellHeight: CGFloat = 195.0
+    let unselectedCellHeight: CGFloat = 108.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.separatorStyle = .none
+        self.tableView.tableFooterView = UIView()
         
         helper.fetchAll(autoshopName: "") { (record) in
             
@@ -26,24 +33,20 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
                 self.tableView.reloadData()
             }
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return currentData.count 
+        return currentData.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if selectedCellIndexPath == indexPath {
+            return selectedCellHeight
+        }
+        return unselectedCellHeight
     }
 
 
@@ -53,7 +56,13 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
 
         let dataIndex = currentData[indexPath.row]
         cell.autoshopName.text = dataIndex["autoshopName"]
-//        cell.serviceTime.text = dataIndex["datetime"]
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH.mm"
+        
+        let bookingDate = dateFormatter.string(from: dataIndex["datetime"] as! Date)
+        
+        cell.serviceTime.text = bookingDate + " WIB"
         cell.motorcycleModel.text = dataIndex["motorType"]
         cell.licensePlateNo.text = dataIndex["licensePlate"]
         cell.userPhoneNo.text = dataIndex["phoneNumber"]
@@ -63,55 +72,25 @@ class UserHistoryCurrentBookingTableVC: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        return 173
+        if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
+            selectedCellIndexPath = nil
+        } else {
+            selectedCellIndexPath = indexPath
+        }
+        
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+        if selectedCellIndexPath != nil {
+            // This ensures, that the cell is fully visible once expanded
+            tableView.scrollToRow(at: indexPath, at: .none, animated: true)
+        }
+                
+        print("Cell \(indexPath.row) selected")
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

@@ -64,7 +64,7 @@ class InProgressCell: UITableViewCell {
         
         let bookingDate = dateFormatter.string(from: bookingData["datetime"] as! Date)
         
-        BookingTime.text = bookingDate
+        BookingTime.text = bookingDate + " WIB"
         BookingMotorType.text = bookingData["motorType"]
         BookingPlateNumber.text = bookingData["licensePlate"]
         BookingPhoneNumber.text = bookingData["phoneNumber"]
