@@ -30,6 +30,7 @@
 		838744FB2474D9B8006F1D52 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838744FA2474D9B8006F1D52 /* BookingModel.swift */; };
 		8387454E2476421A006F1D52 /* OwnerProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8387454D2476421A006F1D52 /* OwnerProfileTableVC.swift */; };
 		838E0A4B247F2E1300B77079 /* OwnerEditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E0A4A247F2E1300B77079 /* OwnerEditProfileTableVC.swift */; };
+		838E0A4D247F426B00B77079 /* UserHistoryCompletedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E0A4C247F426B00B77079 /* UserHistoryCompletedTableVC.swift */; };
 		839BB72C247D2D3A00DB9AF9 /* UserProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BB72B247D2D3A00DB9AF9 /* UserProfileTableVC.swift */; };
 		839BB72E247D2DC900DB9AF9 /* UserEditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BB72D247D2DC900DB9AF9 /* UserEditProfileVC.swift */; };
 		839BB730247D2DE500DB9AF9 /* UserEditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BB72F247D2DE500DB9AF9 /* UserEditProfileTableVC.swift */; };
@@ -90,6 +91,7 @@
 		838744FA2474D9B8006F1D52 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
 		8387454D2476421A006F1D52 /* OwnerProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileTableVC.swift; sourceTree = "<group>"; };
 		838E0A4A247F2E1300B77079 /* OwnerEditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerEditProfileTableVC.swift; sourceTree = "<group>"; };
+		838E0A4C247F426B00B77079 /* UserHistoryCompletedTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryCompletedTableVC.swift; sourceTree = "<group>"; };
 		839BB72B247D2D3A00DB9AF9 /* UserProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableVC.swift; sourceTree = "<group>"; };
 		839BB72D247D2DC900DB9AF9 /* UserEditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditProfileVC.swift; sourceTree = "<group>"; };
 		839BB72F247D2DE500DB9AF9 /* UserEditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditProfileTableVC.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				5AA25D0C247CC4F2003D07E7 /* UserSignUpVC.swift */,
 				5A7C73EC2463FB4A009ABFC3 /* UserHistoryVC.swift */,
 				5A4BB1AE247EBB4A00B3B081 /* UserHistoryCompletedBookingCell.swift */,
+				838E0A4C247F426B00B77079 /* UserHistoryCompletedTableVC.swift */,
 				5AB38F5E247DF587002739F7 /* UserHistoryCurrentBookingTableVC.swift */,
 				5AB38F60247E0906002739F7 /* UserHistoryCurrentBookingCell.swift */,
 			);
@@ -460,6 +463,7 @@
 				5AB38F5F247DF587002739F7 /* UserHistoryCurrentBookingTableVC.swift in Sources */,
 				839BB72C247D2D3A00DB9AF9 /* UserProfileTableVC.swift in Sources */,
 				8387454E2476421A006F1D52 /* OwnerProfileTableVC.swift in Sources */,
+				838E0A4D247F426B00B77079 /* UserHistoryCompletedTableVC.swift in Sources */,
 				8330E3D624798A2600C9A4A5 /* OwnerSignUpTableVC.swift in Sources */,
 				5A7C73ED2463FB4A009ABFC3 /* UserHistoryVC.swift in Sources */,
 				83B353C724792196000C027F /* AutoshopRegistTableVC.swift in Sources */,

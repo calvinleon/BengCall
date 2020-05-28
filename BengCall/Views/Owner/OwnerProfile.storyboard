@@ -188,6 +188,32 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="180" id="wTX-Gh-EDR">
+                                        <rect key="frame" x="0.0" y="529" width="414" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTX-Gh-EDR" id="iHT-Of-HdQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axQ-lu-98b">
+                                                    <rect key="frame" x="20" y="100" width="374" height="39"/>
+                                                    <color key="backgroundColor" red="0.91691869500000001" green="0.62585645909999998" blue="0.43131613730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="39" id="yw4-b3-J4M"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Log Out">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="axQ-lu-98b" secondAttribute="bottom" constant="30" id="7Yx-Gw-a7I"/>
+                                                <constraint firstItem="axQ-lu-98b" firstAttribute="trailing" secondItem="iHT-Of-HdQ" secondAttribute="trailingMargin" id="BdT-9U-YXM"/>
+                                                <constraint firstItem="axQ-lu-98b" firstAttribute="leading" secondItem="iHT-Of-HdQ" secondAttribute="leadingMargin" id="rFX-uS-cUc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -213,6 +239,7 @@
                         <outlet property="autoshopImageView" destination="Iho-la-ait" id="j5Z-NU-Vi4"/>
                         <outlet property="autoshopNameLabel" destination="HLE-o7-NRH" id="QBY-H9-fu0"/>
                         <outlet property="capacityLabel" destination="MdF-tW-XSY" id="gEn-Rp-boJ"/>
+                        <outlet property="ownerLogOut" destination="axQ-lu-98b" id="EwQ-fx-gop"/>
                         <outlet property="phoneNumberLabel" destination="30k-Vc-8SL" id="n9P-7y-SCu"/>
                         <outlet property="serviceLabel" destination="sbN-vb-6QR" id="I0u-Xv-22i"/>
                     </connections>

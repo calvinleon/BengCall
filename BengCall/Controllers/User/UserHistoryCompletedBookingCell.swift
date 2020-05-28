@@ -11,6 +11,7 @@ import UIKit
 class UserHistoryCompletedBookingCell: UITableViewCell {
     
     
+    @IBOutlet weak var insideCellView: UIView!
     @IBOutlet weak var autoshopName: UILabel!
     @IBOutlet weak var bookingTime: UILabel!
     @IBOutlet weak var motorType: UILabel!
@@ -19,13 +20,23 @@ class UserHistoryCompletedBookingCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        setupCompleteCellView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupCompleteCellView(){
+        self.insideCellView.layer.cornerRadius = 8.0
+        self.insideCellView.layer.shadowColor = UIColor.darkGray.cgColor
+        self.insideCellView.layer.shadowRadius = 5
+        self.insideCellView.layer.shadowOpacity = 0.2
+        self.insideCellView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        
     }
 
 }
