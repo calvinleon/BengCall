@@ -26,7 +26,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0S-Uu-nJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="1264"/>
+            <point key="canvasLocation" x="964" y="-329"/>
         </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
@@ -251,6 +251,7 @@
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
                         <outlet property="searchView" destination="1Vs-ez-Ab9" id="cVa-uq-93H"/>
                         <segue destination="WUQ-U5-aFp" kind="show" identifier="autoshopDetailSegue" id="hkM-UW-IQ0"/>
+                        <segue destination="I3c-ue-LEy" kind="show" identifier="bookingSuccessSegue" id="QvT-qP-vzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMw-G4-HHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -812,12 +813,12 @@ Science Group. </string>
                         <outlet property="btn9" destination="CXt-67-vFt" id="VCt-3r-2QO"/>
                         <outlet property="calendar" destination="54x-td-cyt" id="s5B-ev-FvZ"/>
                         <outlet property="mainView" destination="BEu-IM-VVm" id="Fde-cp-tMt"/>
-                        <segue destination="I3c-ue-LEy" kind="show" identifier="userHistorySegue" id="LXy-hW-gEY"/>
+                        <segue destination="raO-Fz-iLe" kind="show" identifier="userHistorySegue" id="6nW-6y-nhz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcp-hR-LqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586.95652173913049" y="1044.6428571428571"/>
+            <point key="canvasLocation" x="-549" y="1049"/>
         </scene>
         <!--Profile-->
         <scene sceneID="cQ0-NG-qqG">
@@ -833,7 +834,7 @@ Science Group. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOc-jY-hqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-677" y="156"/>
+            <point key="canvasLocation" x="-696" y="105"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="btw-EE-cry">
@@ -878,7 +879,8 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HSC-Qc-f3w"/>
+        <segue reference="6nW-6y-nhz"/>
+        <segue reference="P71-fH-LVP"/>
         <segue reference="hkM-UW-IQ0"/>
     </inferredMetricsTieBreakers>
     <resources>

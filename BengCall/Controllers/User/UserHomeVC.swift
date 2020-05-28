@@ -20,22 +20,25 @@ class UserHomeVC: UIViewController {
     var tempImg = UIImage()
     var tempPhoneNumber = ""
     
+    var isBooked = false
+    
     var tempDistance = ""
     
     var autoShops = AutoShop.fetchAutoShop()
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
+       
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+    
         collectionView.dataSource = self
         collectionView.delegate = self
 
         searchView.layer.cornerRadius = 8
+        
     }
     
     func startSegue() {
