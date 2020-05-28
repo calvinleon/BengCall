@@ -438,7 +438,7 @@ Science Group. </string>
                                                             <constraint firstAttribute="height" constant="25" id="Jtp-b8-qk3"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maps" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-Ql-INT">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map2" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-Ql-INT">
                                                         <rect key="frame" x="13" y="295" width="387" height="165"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="165" id="CAH-kz-458"/>
@@ -878,7 +878,7 @@ Science Group. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="P71-fH-LVP"/>
+        <segue reference="HSC-Qc-f3w"/>
         <segue reference="hkM-UW-IQ0"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -886,7 +886,7 @@ Science Group. </string>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="113"/>
-        <image name="maps" width="2312" height="858"/>
+        <image name="map2" width="2064" height="790"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
     </resources>
