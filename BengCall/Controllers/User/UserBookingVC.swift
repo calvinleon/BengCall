@@ -81,6 +81,11 @@ class UserBookingVC: UIViewController {
         self.view.endEditing(true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? UserHomeVC {
+            destination.isBooked = true
+        }
+    }
     
     @IBAction func bookBtn(_ sender: Any) {
         
@@ -94,6 +99,15 @@ class UserBookingVC: UIViewController {
                 self.helper.saveBooking(customerName: self.customerName, motorType: self.motorType, licensePlate: self.licensePlate, phoneNumber: self.phoneNumber, datetime: self.bookingDate, autoshopName: self.autoshopName)
                 
                 self.performSegue(withIdentifier: "userHistorySegue", sender: self)
+                
+                let alert = UIAlertController(title: "Booking", message: "Your booking was successful", preferredStyle: .alert)
+                
+                let cancel = UIAlertAction(title: "OK", style: .default, handler: { action in
+                })
+                alert.addAction(cancel)
+                DispatchQueue.main.async(execute: {
+                    self.present(alert, animated: true)
+                })
                 
             })
             

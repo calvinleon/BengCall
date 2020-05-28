@@ -26,7 +26,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0S-Uu-nJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="1264"/>
+            <point key="canvasLocation" x="964" y="-329"/>
         </scene>
         <!--Home-->
         <scene sceneID="QZ2-j4-bvs">
@@ -251,6 +251,7 @@
                         <outlet property="collectionView" destination="2FG-th-koQ" id="Xfd-Hg-mP4"/>
                         <outlet property="searchView" destination="1Vs-ez-Ab9" id="cVa-uq-93H"/>
                         <segue destination="WUQ-U5-aFp" kind="show" identifier="autoshopDetailSegue" id="hkM-UW-IQ0"/>
+                        <segue destination="I3c-ue-LEy" kind="show" identifier="bookingSuccessSegue" id="QvT-qP-vzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMw-G4-HHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
