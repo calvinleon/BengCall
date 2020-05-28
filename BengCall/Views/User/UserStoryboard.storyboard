@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="raO-Fz-iLe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -790,6 +790,7 @@ Science Group. </string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="luU-HH-v2E" firstAttribute="leading" secondItem="5Ly-Iu-niN" secondAttribute="leading" constant="20" id="8AK-h3-HTA"/>
                             <constraint firstItem="5Ly-Iu-niN" firstAttribute="bottom" secondItem="luU-HH-v2E" secondAttribute="bottom" constant="20" id="8uJ-JW-weF"/>
@@ -810,6 +811,7 @@ Science Group. </string>
                         <outlet property="btn8" destination="Ykx-mP-Byh" id="TR2-Hn-UcT"/>
                         <outlet property="btn9" destination="CXt-67-vFt" id="VCt-3r-2QO"/>
                         <outlet property="calendar" destination="54x-td-cyt" id="s5B-ev-FvZ"/>
+                        <outlet property="mainView" destination="BEu-IM-VVm" id="Fde-cp-tMt"/>
                         <segue destination="I3c-ue-LEy" kind="show" identifier="userHistorySegue" id="LXy-hW-gEY"/>
                     </connections>
                 </viewController>
