@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class OwnerSignUpVC: UIViewController {
-
+    
     @IBOutlet weak var ownerSignUpButton: UIButton!
     
     var ownerSignUpTexField: OwnerSignUpTableVC?
@@ -32,6 +32,14 @@ class OwnerSignUpVC: UIViewController {
         super.viewDidLoad()
         
         setupButton()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,7 +65,7 @@ class OwnerSignUpVC: UIViewController {
         newOwnerItem.capacity = ownerCapacity
         
         saveItem()
-
+        
         
         //self.performSegue(withIdentifier: "signupToRegistration", sender: self)
         
@@ -77,7 +85,7 @@ class OwnerSignUpVC: UIViewController {
         
     }
     
-
+    
 }
 
 extension OwnerSignUpVC {
@@ -115,18 +123,18 @@ extension OwnerSignUpVC {
         if name.isEmpty && email.isEmpty && password.isEmpty && number.isEmpty && capacity.isEmpty {
             alertLogin(msg: "All Textfield")
         } /*else if name.isEmpty {
-            alertLogin(msg: "name")
-        } else if email.isEmpty {
-            alertLogin(msg: "email")
-        } else if password.isEmpty {
-            alertLogin(msg: "password")
-        } else if reenterpassword.isEmpty {
-            alertLogin(msg: "re-enter password")
-        } else if number.isEmpty {
-            alertLogin(msg: "number")
-        } else if capacity.isEmpty {
-            alertLogin(msg: "capacity")
-        }*/ else {
+             alertLogin(msg: "name")
+             } else if email.isEmpty {
+             alertLogin(msg: "email")
+             } else if password.isEmpty {
+             alertLogin(msg: "password")
+             } else if reenterpassword.isEmpty {
+             alertLogin(msg: "re-enter password")
+             } else if number.isEmpty {
+             alertLogin(msg: "number")
+             } else if capacity.isEmpty {
+             alertLogin(msg: "capacity")
+         }*/ else {
             
             self.ownerName = name
             self.ownerEmail = email
@@ -138,7 +146,7 @@ extension OwnerSignUpVC {
             showActivityIndicator()
             
         }
-
+        
         
     }
     
